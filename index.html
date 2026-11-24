@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>대지남사서비스(주) · 현대 블루핸즈 남사점</title>
+<meta name="description" content="용인 처인구 남사읍 현대자동차 블루핸즈. 일반 정비, 보증 수리, 자동차 정기·종합검사, DPF 세척(K-Dissolve).">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+<style>
+:root{
+  --navy:#0B1A33; --navy-2:#13274A; --blue:#1F5FAE; --blue-soft:#E8F0FA; --sky:#6FA3D2;
+  --bg:#FFFFFF; --bg-2:#F4F6FA; --text:#111827; --sub:#4B5563; --muted:#8A94A6; --line:#E3E8F0;
+  --kakao:#FEE500; --kakao-ink:#1E1B00;
+  --font:"NanumSquare","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --r:14px; --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+.alt{background:var(--bg-2)}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--blue);text-transform:uppercase}
+h2{font-size:clamp(26px,3.4vw,36px);font-weight:900;line-height:1.3;margin:8px 0 12px}
+.lead{color:var(--sub);font-size:17px;max-width:640px}
+.head{margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:52px;padding:0 24px;border-radius:999px;font-weight:800;font-size:16px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-line{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-line-d{border:1.5px solid var(--line);color:var(--text);background:#fff}
+.btn-kakao{background:var(--kakao);color:var(--kakao-ink)}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr} section{padding:64px 0}}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(11,26,51,.96);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo img{height:34px;width:auto}
+.menu{display:flex;gap:26px;font-size:15px;font-weight:700;color:#C9D4E5}
+.menu a:hover{color:#fff}
+.menu .kd{color:var(--sky)}
+.nav .btn{height:40px;padding:0 18px;font-size:14px}
+@media (max-width:960px){.menu{display:none}}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:120px 0 110px;background:var(--navy) url(img/main_img.jpg) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,26,51,.92) 0%,rgba(11,26,51,.7) 55%,rgba(11,26,51,.35) 100%)}
+.hero .wrap{position:relative}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.badge{font-size:13px;font-weight:800;padding:6px 12px;border-radius:999px;background:rgba(111,163,210,.18);color:#BFD7EE;border:1px solid rgba(111,163,210,.35)}
+.hero h1{font-size:clamp(34px,5.4vw,58px);font-weight:900;line-height:1.22;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--sky)}
+.hero p{margin:20px 0 34px;font-size:18px;color:#D3DCEA;max-width:560px}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:64px;background:rgba(255,255,255,.12);border-radius:var(--r);overflow:hidden;max-width:760px}
+.quick div{background:rgba(11,26,51,.75);padding:18px 20px}
+.quick span{display:block;font-size:13px;color:#9FB0C8}
+.quick b{font-size:17px}
+@media (max-width:620px){.quick{grid-template-columns:1fr}}
+
+/* K-Dissolve band */
+.kd-band{background:linear-gradient(120deg,#0F1729 0%,#13274A 100%);color:#fff;padding:64px 0}
+.kd-in{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.kd-band .tag{display:inline-block;font-size:13px;font-weight:800;padding:5px 12px;border-radius:999px;background:#F87171;color:#fff;margin-bottom:14px}
+.kd-band h2{color:#fff}
+.kd-band p{color:#C9D4E5;font-size:17px;margin-bottom:26px}
+.kd-pts{display:grid;gap:12px}
+.kd-pts div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:16px 18px}
+.kd-pts b{display:block;font-size:17px;color:var(--sky)}
+.kd-pts span{font-size:14px;color:#B8C4D6}
+@media (max-width:860px){.kd-in{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about img{border-radius:var(--r);aspect-ratio:4/3;object-fit:cover;width:100%}
+.quote{font-size:20px;font-weight:800;line-height:1.5;margin-bottom:18px}
+.quote em{font-style:normal;color:var(--blue)}
+.about p{color:var(--sub);margin-bottom:14px}
+.vm{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.vm div{background:var(--bg-2);border-radius:12px;padding:16px}
+.vm span{font-size:13px;font-weight:800;color:var(--blue)}
+.vm b{display:block;font-size:15px;margin-top:4px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.why{margin-top:56px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.card .ph{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card .bd{padding:18px 20px 20px}
+.card h3{font-size:18px;font-weight:800;margin-bottom:6px}
+.card p{font-size:15px;color:var(--sub)}
+
+/* services */
+.svc{padding:24px;display:flex;flex-direction:column}
+.svc .ic{width:44px;height:44px;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;margin-bottom:16px}
+.svc .ic svg{width:24px;height:24px}
+.svc details{margin-top:auto;padding-top:14px}
+.svc summary{cursor:pointer;font-weight:800;font-size:14px;color:var(--blue);list-style:none}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary::after{content:" +"} .svc details[open] summary::after{content:" −"}
+.svc ul{margin:10px 0 0 18px;font-size:14px;color:var(--sub)}
+.svc li{margin:4px 0}
+.svc .note{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* hours & process */
+.hours{display:grid;grid-template-columns:1fr 1.6fr;gap:28px}
+.hbox{background:var(--navy);color:#fff;border-radius:var(--r);padding:28px}
+.hbox h3{font-size:18px;margin-bottom:18px}
+.hrow{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:16px}
+.hrow:last-of-type{border:0}
+.hrow b{font-weight:800}
+.hbox small{display:block;color:#9FB0C8;margin-top:12px;font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;counter-increment:s}
+.step::before{content:"0" counter(s);display:block;font-size:13px;font-weight:900;color:var(--blue);margin-bottom:6px}
+.step b{display:block;font-size:16px}
+.step span{font-size:14px;color:var(--sub)}
+@media (max-width:860px){.hours{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}}
+
+/* benefits */
+.ben{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ben img{border-radius:var(--r);width:100%;aspect-ratio:2/1;object-fit:cover}
+.blist{display:grid;gap:16px}
+.blist div{border-left:3px solid var(--blue);padding:2px 0 2px 16px}
+.blist b{display:block;font-size:17px}
+.blist span{font-size:15px;color:var(--sub)}
+@media (max-width:860px){.ben{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:800;font-size:17px;list-style:none;display:flex;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .q{color:var(--blue)}
+.faq details p{margin:12px 0 0 34px;color:var(--sub);font-size:15px}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.vcard .big{font-size:30px;font-weight:900;color:var(--blue);display:block;margin:4px 0 18px}
+.vrow{display:flex;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+.vrow span{width:72px;flex:none;color:var(--muted)}
+.vbtns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.vbtns .btn{height:46px;font-size:15px}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:#9FB0C8;font-size:14px;padding:44px 0 110px}
+footer .logo img{height:30px;margin-bottom:16px}
+footer p{margin:2px 0}
+footer .links{display:flex;flex-wrap:wrap;gap:18px;margin:16px 0}
+footer .links a{color:#C9D4E5;font-weight:700}
+@media (min-width:861px){footer{padding-bottom:44px}}
+
+/* mobile call bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;height:48px;font-size:15px}
+@media (max-width:860px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><img src="img/logo.png" alt="대지남사서비스(주) 블루핸즈"></a>
+    <nav class="menu">
+      <a href="#about">회사소개</a><a href="#service">정비 서비스</a><a class="kd" href="#kdissolve">DPF 세척</a><a href="#facility">시설안내</a><a href="#guide">이용안내</a><a href="#faq">자주 묻는 질문</a><a href="#visit">오시는 길</a>
+    </nav>
+    <a class="btn btn-blue" href="tel:07049001168">전화 예약</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="badges"><span class="badge">현대자동차 공식 서비스 협력사</span><span class="badge">국가 지정 자동차 검사장</span></div>
+    <h1>고객의 안전을 최우선으로,<br><em>믿을 수 있는 정비</em>를 약속합니다</h1>
+    <p>대지남사서비스(주) 블루핸즈는 현대자동차 공식 진단 장비와 숙련된 엔지니어가 고객님의 차량을 안전하고 꼼꼼하게 관리합니다.</p>
+    <div class="row">
+      <a class="btn btn-white" href="tel:07049001168">정비 예약 070-4900-1168</a>
+      <a class="btn btn-line" href="#guide">영업시간 보기</a>
+    </div>
+    <div class="quick">
+      <div><span>평일</span><b>08:30 ~ 18:00</b></div>
+      <div><span>토요일</span><b>08:30 ~ 13:00</b></div>
+      <div><span>위치</span><b>용인 처인구 남사읍</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="kd-band" id="kdissolve">
+  <div class="wrap kd-in">
+    <div>
+      <span class="tag">새 서비스</span>
+      <h2>막힌 DPF, 교체하기 전에<br>K-Dissolve 세척부터 확인하세요</h2>
+      <p>직접 개발한 K-Dissolve 장비로 DPF를 차에서 떼어 세척합니다. 화물차·트럭부터 디젤 승용차까지 가능합니다.</p>
+      <a class="btn btn-white" href="https://janghyukjin.github.io/k-dissolve/">K-Dissolve DPF 세척 자세히 보기 →</a>
+    </div>
+    <div class="kd-pts">
+      <div><b>1~2시간</b><span>세척 시간 (차량 상태에 따라 다름)</span></div>
+      <div><b>1년 품질 보증</b><span>세척 후 1년 동안 보증</span></div>
+      <div><b>전 차종 디젤</b><span>포터·봉고, 마이티·메가트럭, 엑시언트, 승용·SUV</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <img src="img/img_01.jpg" alt="대지남사서비스 건물 전경" loading="lazy">
+      <div>
+        <span class="eyebrow">회사소개</span>
+        <p class="quote" style="margin-top:10px">고객의 안전한 차량 운행을 책임지는 든든한 파트너,<br><em>대지남사서비스(주) 블루핸즈</em>입니다.</p>
+        <p>대지남사서비스(주) 블루핸즈는 현대자동차 공식 서비스 네트워크로서 최첨단 진단 장비와 풍부한 경험을 갖춘 전문 엔지니어들이 고객님의 차량을 책임지고 관리합니다.</p>
+        <p>단순한 고장 수리를 넘어 예방 정비와 꼼꼼한 점검으로 늘 안전하게 운행하실 수 있도록 돕겠습니다. 투명한 정비 과정과 친절한 서비스로 지역에서 가장 신뢰받는 정비 센터가 되겠습니다.</p>
+        <div class="vm">
+          <div><span>비전</span><b>신뢰받는 지역 최고의 종합 자동차 정비 센터</b></div>
+          <div><span>미션</span><b>투명한 정비와 완벽한 기술력으로 고객 감동 실현</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why">
+      <div class="head"><span class="eyebrow">왜 대지남사인가</span><h2>무엇이 다르고, 왜 믿을 수 있을까요?</h2></div>
+      <div class="grid g4">
+        <div class="card"><img class="ph" src="img/img_02.jpg" alt="진단기" loading="lazy"><div class="bd"><h3>현대자동차 공식 진단 장비</h3><p>공식 스캐너로 전자 계통까지 정밀하게 진단합니다.</p></div></div>
+        <div class="card"><img class="ph" src="img/img_03.jpg" alt="견적 상담" loading="lazy"><div class="bd"><h3>정직한 사전 견적</h3><p>작업 전에 견적을 먼저 안내해 과잉 정비를 막습니다.</p></div></div>
+        <div class="card"><img class="ph" src="img/img_04.jpg" alt="정비사" loading="lazy"><div class="bd"><h3>국가 공인 전문 엔지니어</h3><p>숙련된 노하우로 정확하게 수리합니다.</p></div></div>
+        <div class="card"><img class="ph" src="img/img_05.jpg" alt="대기실" loading="lazy"><div class="bd"><h3>쾌적한 고객 대기실</h3><p>정비하는 동안 편하게 기다리실 수 있습니다.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="service">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">정비 서비스</span><h2>현대자동차 공식 매뉴얼대로 정확하게</h2><p class="lead">항목을 누르면 자세한 안내가 펼쳐집니다.</p></div>
+    <div class="grid g3">
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+        <h3>일반 정비</h3><p>엔진, 미션, 하체 소음 등 일반 고장을 스캐너 진단과 전문가의 노하우로 정확히 수리합니다.</p>
+        <details><summary>자세히</summary><ul><li>엔진·미션(변속기) 계통 정밀 진단 및 수리</li><li>하체 소음 부품(로어암, 쇽업소버 등) 점검·교환</li><li>냉각수 누수, 엔진오일 누유 확인 및 개스킷 작업</li><li>각종 센서류·전장 시스템 고장 수리</li></ul></details>
+      </div>
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>보증 수리</h3><p>현대자동차 보증 기간 내 무상 수리 항목을 본사 규정에 맞게 신속히 처리합니다.</p>
+        <details><summary>자세히</summary><ul><li>차체 및 일반 부품: 3년 / 6만km</li><li>엔진 및 동력 전달 주요 부품: 5년 / 10만km</li><li>배출가스 관련 부품: 5년 / 8만km ~ 7년 / 12만km</li></ul><p class="note">차종별로 다르며, 보증 여부는 차량등록증 또는 차대번호로 조회합니다.</p></details>
+      </div>
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <h3>자동차 정기·종합검사</h3><p>국가 지정 자동차 검사장으로 정기검사와 종합검사를 한 곳에서 진행합니다.</p>
+        <details><summary>자세히</summary><ul><li>준비물: 자동차 등록증, 책임보험 영수증(전산 확인되면 생략)</li><li>검사 항목: 조향·제동·주행 계통, 배기가스, 전조등 밝기·각도 등</li><li>부적합 판정 시 현장에서 수리 후 바로 재검사</li></ul><p class="note">검사 기간이 지나면 과태료가 생길 수 있으니 미리 예약해 주세요.</p></details>
+      </div>
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>블루점검 (기본점검)</h3><p>신차 출고 후 8년간 매년 1회 제공되는 현대자동차 무상 점검입니다.</p>
+        <details><summary>자세히</summary><ul><li>오일류, 타이어 공기압, 브레이크 패드 마모 등 15가지 기본 점검</li><li>에탄올 워셔액 무료 보충</li><li>마이현대 앱에서 남은 횟수 확인·예약</li></ul></details>
+      </div>
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div>
+        <h3>소모품 교환</h3><p>엔진오일, 브레이크 패드, 배터리, 필터 등을 현대모비스 순정 부품으로 교환합니다.</p>
+        <details><summary>자세히</summary><ul><li>엔진오일·오일필터·에어클리너 세트</li><li>에어컨·히터 항균 필터</li><li>브레이크 패드·디스크·브레이크액</li><li>부동액(냉각수), 배터리, 와이퍼</li></ul></details>
+      </div>
+      <div class="card svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+        <h3>긴급출동 지원</h3><p>운행 중 돌발 고장이나 사고 시 견인과 현장 응급 조치를 지원합니다.</p>
+        <details><summary>자세히</summary><ul><li>현대자동차 통합 긴급출동: <a href="tel:0806006000"><b>080-600-6000</b></a> (24시간)</li><li>지점 직통(영업시간 내): <a href="tel:01062990823"><b>010-6299-0823</b></a></li></ul></details>
+      </div>
+    </div>
+
+    <div class="head" style="margin-top:72px"><span class="eyebrow">주요 정비 항목</span><h2>가장 많이 찾으시는 정비</h2></div>
+    <div class="grid g3">
+      <div class="card"><img class="ph" src="img/img_12.jpg" alt="엔진오일 교환" loading="lazy"><div class="bd"><h3>엔진오일·필터 교환</h3><p>차종별 규격에 맞는 순정 오일과 합성유 교환</p></div></div>
+      <div class="card"><img class="ph" src="img/img_13.jpg" alt="브레이크 정비" loading="lazy"><div class="bd"><h3>브레이크 시스템</h3><p>패드·디스크 점검과 교체, 브레이크 오일 순환식 교환</p></div></div>
+      <div class="card"><img class="ph" src="img/img_14.jpg" alt="배터리 점검" loading="lazy"><div class="bd"><h3>배터리·전장품</h3><p>배터리 진단·교체, 발전기 점검, 전구류·전장 점검</p></div></div>
+      <div class="card"><img class="ph" src="img/img_15.jpg" alt="타이어 교체" loading="lazy"><div class="bd"><h3>타이어 교체·수리</h3><p>마모 점검, 신품 교체, 펑크 수리, 휠 밸런스</p></div></div>
+      <div class="card"><img class="ph" src="img/img_16.jpg" alt="에어컨 정비" loading="lazy"><div class="bd"><h3>에어컨·히터</h3><p>가스 충전, 에바포레이터 클리닝, 항균 필터 교환</p></div></div>
+      <div class="card"><img class="ph" src="img/img_17.jpg" alt="엔진 점검" loading="lazy"><div class="bd"><h3>엔진·미션 계통</h3><p>점화플러그·코일, 구동벨트, 미션오일, 냉각수 교환</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="facility">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">시설안내</span><h2>안전하고 정확한 정비를 위한 시설</h2></div>
+    <div class="grid g3">
+      <div class="card"><img class="ph" src="img/img_06.jpg" alt="정비 구역" loading="lazy"><div class="bd"><h3>메인 워크베이 (리프트)</h3><p>고하중 리프트를 여러 대 갖춰 대기 시간을 줄였습니다.</p></div></div>
+      <div class="card"><img class="ph" src="img/img_07.jpg" alt="진단 스캐너" loading="lazy"><div class="bd"><h3>최신 전자 제어 스캐너</h3><p>현대자동차 전용 진단기로 전자 계통 고장까지 찾아냅니다.</p></div></div>
+      <div class="card"><img class="ph" src="img/img_08.jpg" alt="휠 얼라인먼트" loading="lazy"><div class="bd"><h3>3D 휠 얼라인먼트</h3><p>편마모를 막고 주행 안정성을 위한 정밀 교정 장비입니다.</p></div></div>
+      <div class="card"><img class="ph" src="img/img_09.jpg" alt="고객 대기실" loading="lazy"><div class="bd"><h3>고객 대기실</h3><p>TV와 편한 의자를 갖춘 대기 공간입니다.</p></div></div>
+      <div class="card"><img class="ph" src="img/img_10.jpg" alt="부품실" loading="lazy"><div class="bd"><h3>순정 부품 창고</h3><p>현대모비스 순정 부품만 취급하고 주요 부품은 늘 재고를 둡니다.</p></div></div>
+      <div class="card"><img class="ph" src="img/img_11.jpg" alt="접수처" loading="lazy"><div class="bd"><h3>안내 및 접수처</h3><p>빠른 접수와 사전 견적 상담이 이루어지는 곳입니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="guide">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">이용 및 예약 안내</span><h2>체계적인 정비 과정으로 시간을 아껴 드립니다</h2></div>
+    <div class="hours">
+      <div class="hbox">
+        <h3>영업시간</h3>
+        <div class="hrow"><span>평일 (월~금)</span><b>08:30 ~ 18:00</b></div>
+        <div class="hrow"><span>토요일</span><b>08:30 ~ 13:00</b></div>
+        <div class="hrow"><span>일요일·공휴일</span><b>휴무</b></div>
+        <small>토요일은 접수가 일찍 마감될 수 있으니 미리 전화해 주세요.</small>
+      </div>
+      <div class="steps">
+        <div class="step"><b>예약 및 접수</b><span>앱·전화 예약 또는 방문</span></div>
+        <div class="step"><b>상담 및 점검</b><span>엔지니어 배정, 증상 확인</span></div>
+        <div class="step"><b>견적 안내</b><span>작업 전 견적서 발행</span></div>
+        <div class="step"><b>정비 진행</b><span>순정 부품으로 꼼꼼히 수리</span></div>
+        <div class="step"><b>최종 검수</b><span>작업 부위 다시 확인</span></div>
+        <div class="step"><b>결제 및 출고</b><span>작업 설명 후 인도</span></div>
+      </div>
+    </div>
+
+    <div class="ben" style="margin-top:72px">
+      <img src="img/img_18.jpg" alt="스마트 차량 관리" loading="lazy">
+      <div>
+        <span class="eyebrow">블루핸즈 고객 혜택</span>
+        <h2>현대자동차 오너를 위한 서비스</h2>
+        <div class="blist">
+          <div><b>홈투홈 서비스</b><span>원하시는 곳에서 차를 받아 정비 후 다시 가져다 드립니다. (앱 사전 신청)</span></div>
+          <div><b>블루멤버스 포인트 결제</b><span>적립된 포인트를 수리비 결제에 현금처럼 쓸 수 있습니다.</span></div>
+          <div><b>정비 이력 관리</b><span>전국 블루핸즈 어디서나 정비 이력이 이어집니다.</span></div>
+          <div><b>마이현대 앱 연동</b><span>정비 시기 알림, 모바일 예약, 리콜 확인, 정비 명세서 조회</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">FAQ</span><h2>자주 묻는 질문</h2></div>
+    <div class="faq">
+      <details><summary><span class="q">Q</span>정비 예약은 어떻게 하나요? 당일 정비도 되나요?</summary><p>현대자동차 통합 고객센터(080-600-6000), 현대자동차 홈페이지, 마이현대 앱, 또는 지점 전화(070-4900-1168)로 예약하실 수 있습니다. 예약 없이 오셔도 정비는 가능하지만 예약 차량을 먼저 작업하므로 대기가 길어질 수 있습니다.</p></details>
+      <details><summary><span class="q">Q</span>영업시간과 휴무일은 언제인가요?</summary><p>평일 08:30~18:00, 토요일 08:30~13:00이며 일요일과 공휴일은 쉽니다. 토요일은 접수가 일찍 마감될 수 있습니다.</p></details>
+      <details><summary><span class="q">Q</span>보증수리 대상과 기간은 어떻게 확인하나요?</summary><p>차종과 부품에 따라 다릅니다(예: 일반 부품 3년/6만km, 엔진·동력 전달 주요 부품 5년/10만km). 차량번호나 차대번호로 조회해야 해서 방문하시면 자세히 안내해 드립니다.</p></details>
+      <details><summary><span class="q">Q</span>블루점검은 무엇이고 언제 받나요?</summary><p>현대자동차 신차 출고 후 8년 동안 매년 1회(총 8회) 받는 무상 점검입니다. 마이현대 앱에서 연차별 점검 시기를 확인할 수 있습니다.</p></details>
+      <details><summary><span class="q">Q</span>엔진오일 교환 비용과 시간은요?</summary><p>차종, 엔진, 오일 종류(일반/합성유)에 따라 다릅니다. 보통 30분~1시간 걸리며, 정확한 금액은 차량을 보고 안내해 드립니다.</p></details>
+      <details><summary><span class="q">Q</span>블루멤버스 포인트로 결제할 수 있나요?</summary><p>네, 가능합니다. 결제 금액에 따른 적립도 함께 됩니다. 결제 시 말씀해 주세요.</p></details>
+      <details><summary><span class="q">Q</span>자동차 정기검사·종합검사도 되나요?</summary><p>네. 국가 지정 자동차 검사장이라 정기검사와 종합검사 모두 가능합니다. 예약 후 오시면 빠르게 처리해 드립니다.</p></details>
+      <details><summary><span class="q">Q</span>DPF 세척도 하나요?</summary><p>네. K-Dissolve 장비로 DPF를 세척합니다. 차종별 안내와 세척 과정은 <a href="https://janghyukjin.github.io/k-dissolve/" style="color:var(--blue);font-weight:800">K-Dissolve 안내 페이지</a>에서 보실 수 있습니다.</p></details>
+      <details><summary><span class="q">Q</span>운행 중 시동이 안 걸리거나 멈추면 어떻게 하나요?</summary><p>현대자동차 긴급출동(080-600-6000)으로 가까운 블루핸즈 견인이나 비상 조치를 받으실 수 있습니다. 영업시간에는 지점 직통(010-6299-0823)으로 연락 주세요.</p></details>
+      <details><summary><span class="q">Q</span>정비명세서나 보험 청구용 영수증을 다시 받을 수 있나요?</summary><p>네. 자동차 점검·정비 명세서는 언제든 재발급됩니다. 방문하시거나 이메일(ceo@dsvkr.com)로 요청해 주세요.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="visit">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">상담 · 오시는 길</span><h2>전화 한 통이면 예약됩니다</h2></div>
+    <div class="visit">
+      <div class="vcard">
+        <span style="color:var(--muted);font-size:14px">대표번호</span>
+        <a class="big" href="tel:07049001168">070-4900-1168</a>
+        <div class="vrow"><span>휴대전화</span><a href="tel:01062990823">010-6299-0823</a></div>
+        <div class="vrow"><span>팩스</span><b style="font-weight:400">031-334-2851</b></div>
+        <div class="vrow"><span>이메일</span><a href="mailto:ceo@dsvkr.com">ceo@dsvkr.com</a></div>
+        <div class="vbtns">
+          <a class="btn btn-blue" href="tel:07049001168">전화하기</a>
+          <a class="btn btn-line-d" href="sms:01062990823">문자 보내기</a>
+        </div>
+      </div>
+      <div class="vcard">
+        <span style="color:var(--muted);font-size:14px">주소</span>
+        <b style="display:block;font-size:20px;margin:4px 0 18px">경기도 용인시 처인구 남사읍 천덕산로 23</b>
+        <div class="vrow"><span>우편번호</span>17118</div>
+        <div class="vrow"><span>평일</span>08:30 ~ 18:00</div>
+        <div class="vrow"><span>토요일</span>08:30 ~ 13:00 (일·공휴일 휴무)</div>
+        <div class="vbtns">
+          <a class="btn btn-line-d" href="https://map.naver.com/p/search/%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">네이버 지도</a>
+          <a class="btn btn-line-d" href="https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%B2%98%EC%9D%B8%EA%B5%AC%20%EB%82%A8%EC%82%AC%EC%9D%8D%20%EC%B2%9C%EB%8D%95%EC%82%B0%EB%A1%9C%2023" target="_blank" rel="noopener">카카오맵</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><img src="img/logo.png" alt="대지남사서비스(주) 블루핸즈"></div>
+    <p>대지남사서비스(주) · 경기도 용인시 처인구 남사읍 천덕산로 23</p>
+    <p>전화 070-4900-1168 · 휴대전화 010-6299-0823 · 팩스 031-334-2851 · ceo@dsvkr.com</p>
+    <div class="links">
+      <a href="https://janghyukjin.github.io/k-dissolve/">K-Dissolve DPF 세척</a>
+      <a href="https://www.hyundai.com" target="_blank" rel="noopener">현대자동차</a>
+    </div>
+    <p>© 2026 대지남사서비스(주). All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-blue" href="tel:07049001168">전화 예약</a>
+  <a class="btn btn-line-d" href="https://janghyukjin.github.io/k-dissolve/">DPF 세척</a>
+  <a class="btn btn-line-d" href="#visit">오시는 길</a>
+</div>
+</body>
+</html>
