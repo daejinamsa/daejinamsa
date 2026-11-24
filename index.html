@@ -69,7 +69,7 @@ a:hover .arrow{transform:translateX(4px)}
 header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s var(--ease),border-color .35s var(--ease);border-bottom:1px solid transparent}
 header.solid{background:rgba(10,20,36,.92);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-color:var(--line-d)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.logo img{height:40px;width:auto}
+.logo img{height:44px;width:auto}
 .menu{display:flex;gap:34px;font-size:15px;font-weight:500;color:rgba(255,255,255,.72)}
 .menu a{position:relative;padding:6px 0;transition:color .2s}
 .menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
@@ -79,7 +79,7 @@ header.solid{background:rgba(10,20,36,.92);backdrop-filter:saturate(1.4) blur(14
 .nav .tel:hover{border-color:#fff;background:rgba(255,255,255,.06)}
 .nav .tel svg{width:16px;height:16px}
 @media (max-width:1000px){.menu{display:none}}
-@media (max-width:520px){.nav .tel span{display:none}.nav .tel{padding:10px 12px}.logo img{height:34px}}
+@media (max-width:520px){.nav .tel span{display:none}.nav .tel{padding:10px 12px}.logo img{height:36px}}
 
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:160px 0 96px;background:var(--ink) url(img/main_img.webp) center 30%/cover no-repeat;overflow:hidden}
@@ -216,7 +216,7 @@ header.solid{background:rgba(10,20,36,.92);backdrop-filter:saturate(1.4) blur(14
 
 footer{background:#070E1A;color:rgba(255,255,255,.5);font-size:14px;padding:56px 0 120px}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px}
-footer .logo img{height:36px;margin-bottom:20px}
+footer .logo img{height:40px;width:auto;margin-bottom:20px}
 footer p{margin:3px 0;line-height:1.7}
 footer .links{display:flex;gap:24px}
 footer .links a{color:rgba(255,255,255,.8);font-weight:500}
@@ -251,9 +251,9 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
 <main id="top">
 <section class="hero">
   <div class="wrap">
-    <div class="kicker"><span>현대자동차 공식 블루핸즈</span><span>승용 · SUV · 화물차 · 트럭</span><span>국가 지정 자동차 검사장</span></div>
-    <h1>승용차부터 화물차까지,<br><em>정비·검사·DPF 세척</em>을<br>한 곳에서</h1>
-    <p>용인 남사읍 현대 블루핸즈 대지남사서비스입니다. 현대자동차 공식 진단 장비로 승용차와 트럭을 함께 정비하고, 국가 지정 검사장에서 정기·종합검사까지 진행합니다.</p>
+    <div class="kicker"><span>현대자동차 공식 서비스 협력사</span><span>국가 지정 자동차 검사장</span></div>
+    <h1>승용에서 상용까지,<br>차의 모든 순간을<br><em>책임집니다</em></h1>
+    <p>대지남사서비스(주)는 용인 남사에 자리한 현대자동차 공식 블루핸즈입니다. 공식 진단 장비와 숙련된 엔지니어가 승용차와 상용차의 정비, 자동차 검사, DPF 세척까지 한 곳에서 맡습니다.</p>
     <div class="row">
       <a class="btn btn-light" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>전화 예약 1577-1335</a>
       <a class="btn btn-ghost" data-link="naverBooking" href="#">자동차 검사 예약 <span class="arrow">→</span></a>
