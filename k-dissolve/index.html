@@ -5,518 +5,476 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>K-Dissolve DPF 세척 · 대지남사서비스</title>
 <meta name="description" content="현대 블루핸즈 남사점 대지남사서비스가 직접 개발한 K-Dissolve DPF 탈거 세척. 보통 1~2시간, 디젤 전 차종, 1년 품질 보증. 경부고속도로 남사진위IC에서 1.5km.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="대지남사서비스(주) 블루핸즈">
 <meta property="og:title" content="K-Dissolve DPF 세척 · 대지남사서비스">
 <meta property="og:description" content="막힌 DPF, 교체하기 전에 세척부터 확인하세요. 1~2시간 탈거 세척, 1년 품질 보증.">
-<meta name="theme-color" content="#0F1729">
+<meta property="og:image" content="https://daejinamsa.com/img/og.jpg">
+<meta property="og:url" content="https://daejinamsa.com/k-dissolve/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A1424">
 <!-- 시안 단계라 검색 노출 막음. 정식 오픈 때 이 줄 삭제 -->
 <meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1424'/%3E%3Ctext x='32' y='44' font-size='34' font-weight='900' text-anchor='middle' fill='%239DBDE6' font-family='sans-serif'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-/* Layout: 발표 자료와 같은 남색 화면. 섹션은 머리말·제목·부제·짧은 시안 선, 어두운 카드 위 숫자 강조. 휴대폰은 하단 고정 문의 바 */
-:root {
-  --bg: #0F1729;
-  --bg-deep: #0B1120;
-  --card: #1A2238;
-  --card-2: #151D33;
-  --line: #2A3550;
-  --line-2: #3D4C6E;
-  --text: #F1F5F9;
-  --text-2: #94A3B8;
-  --muted: #64748B;
-  --cyan: #6FA3D2;
-  --cyan-soft: rgba(111, 163, 210, 0.12);
-  --coral: #F87171;
-  --coral-soft: rgba(248, 113, 113, 0.12);
-  --kakao: #FEE500;
-  --kakao-ink: #1E1B00;
-  --font: "NanumSquare", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
-  --r: 12px;
-  color-scheme: dark;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+:root{
+  --ink:#0A1424; --ink-2:#111E33; --ink-3:#1A2A44;
+  --paper:#FFFFFF; --paper-2:#F6F5F2; --line:#E6E3DD; --line-d:rgba(255,255,255,.12);
+  --text:#121722; --sub:#5A6272; --muted:#949AA6;
+  --accent:#1D4F9C; --accent-l:#9DBDE6; --hot:#D9534A;
+  --font:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --max:1180px; --r:10px; --ease:cubic-bezier(.2,.7,.2,1);
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 17px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; -webkit-font-smoothing: antialiased; }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: max(3px, env(safe-area-inset-top, 0px)); background: var(--cyan); z-index: 40; }
-a { color: inherit; }
-:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
-h1, h2, h3 { margin: 0; text-wrap: balance; font-weight: 800; letter-spacing: -0.02em; }
-p { margin: 0; }
-.wrap { max-width: 72rem; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
-.n { font-variant-numeric: tabular-nums; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--font);color:var(--text);background:var(--paper);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:120px 0}
+.alt{background:var(--paper-2)}
+.dark{background:var(--ink);color:#fff}
+@media (max-width:760px){section{padding:80px 0}.wrap{padding:0 20px}}
+.n{font-variant-numeric:tabular-nums}
 
-.sec { padding-block: 5rem; border-top: 1px solid rgba(42, 53, 80, 0.6); }
-.sec.deep { background: var(--bg-deep); }
-.head { display: flex; flex-direction: column; gap: 0.55rem; max-width: 44rem; margin-bottom: 2.4rem; }
-.eyebrow { font-size: 0.88rem; font-weight: 800; color: var(--cyan); }
-.head h2 { font-size: clamp(1.75rem, 3.4vw, 2.4rem); line-height: 1.3; }
-.head p { color: var(--text-2); font-size: 1.06rem; }
-.head::after { content: ""; width: 2.6rem; height: 2px; background: var(--cyan); margin-top: 0.7rem; }
-@media (max-width: 760px) { .sec { padding-block: 3.6rem; } .head { margin-bottom: 1.8rem; } }
+.label{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
+.label::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .label{color:var(--accent-l)}
+h2{font-size:clamp(30px,3.6vw,46px);font-weight:700;line-height:1.22;letter-spacing:-.035em;margin:18px 0 0}
+.lead{color:var(--sub);font-size:18px;line-height:1.75;max-width:520px}
+.dark .lead{color:rgba(255,255,255,.62)}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:64px}
+.head .lead{justify-self:end}
+@media (max-width:900px){.head{grid-template-columns:1fr;gap:18px;margin-bottom:44px}.head .lead{justify-self:start}}
 
-.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); min-width: 0; }
-.card.hi { border-color: var(--cyan); }
-.card.bar { position: relative; overflow: hidden; }
-.card.bar::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--coral); }
-.card.bar.cy::before { background: var(--cyan); }
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 28px;border-radius:8px;font-weight:600;font-size:16px;letter-spacing:-.01em;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#E9EEF6}
+.btn-ghost{border:1px solid rgba(255,255,255,.32);color:#fff}.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-ink{background:var(--ink);color:#fff}.btn-ink:hover{background:var(--accent)}
+.btn-out{border:1px solid var(--line);color:var(--text);background:#fff}.btn-out:hover{border-color:var(--text)}
+.btn-kakao{background:#FEE500;color:#191600}
+.arrow{display:inline-block;transition:transform .3s var(--ease)}
+a:hover .arrow{transform:translateX(4px)}
 
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 3.4rem; padding: 0 1.45rem; border-radius: 999px; font-family: var(--font); font-weight: 800; font-size: 1.05rem; text-decoration: none; border: 1.5px solid transparent; transition: transform 0.15s ease, filter 0.15s ease; white-space: nowrap; }
-.btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
-.btn-cy { background: var(--cyan); color: #0B1A2B; }
-.btn-kakao { background: var(--kakao); color: var(--kakao-ink); }
-.btn-line { border-color: var(--line-2); color: var(--text); background: transparent; }
-.btn svg { width: 1.15rem; height: 1.15rem; flex: none; }
-.row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s var(--ease),border-color .35s var(--ease);border-bottom:1px solid transparent}
+header.solid{background:rgba(10,20,36,.92);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-color:var(--line-d)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;color:#fff}
+.brand{display:flex;align-items:baseline;gap:12px}
+.brand b{font-size:20px;font-weight:700;letter-spacing:-.03em}
+.brand span{font-size:13px;color:rgba(255,255,255,.55)}
+.menu{display:flex;gap:34px;font-size:15px;font-weight:500;color:rgba(255,255,255,.72)}
+.menu a{position:relative;padding:6px 0;transition:color .2s}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.menu a:hover{color:#fff}.menu a:hover::after{transform:scaleX(1)}
+.tel{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:10px 18px;border:1px solid rgba(255,255,255,.28);border-radius:8px;transition:border-color .2s,background .2s}
+.tel:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.tel svg{width:16px;height:16px}
+@media (max-width:1000px){.menu{display:none}}
+@media (max-width:520px){.brand span{display:none}.tel span{display:none}.tel{padding:10px 12px}}
 
-/* 머리띠 */
-.top { position: sticky; top: 0; z-index: 30; background: rgba(15, 23, 41, 0.92); backdrop-filter: saturate(140%) blur(12px); -webkit-backdrop-filter: saturate(140%) blur(12px); border-bottom: 1px solid var(--line); }
-.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.1rem; }
-.brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; min-width: 0; }
-.mark { width: 2.1rem; height: 2.1rem; border-radius: 50%; border: 2px solid var(--cyan); display: grid; place-items: center; flex: none; }
-.mark i { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--cyan); }
-.brand-text b { display: block; font-size: 1.1rem; font-weight: 800; line-height: 1.2; }
-.brand-text span { display: block; font-size: 0.74rem; color: var(--text-2); line-height: 1.2; }
-.nav { display: flex; gap: 1.6rem; font-size: 0.95rem; font-weight: 700; }
-.nav a { text-decoration: none; color: var(--text-2); }
-.nav a:hover { color: var(--text); }
-.top .btn { min-height: 2.6rem; font-size: 0.92rem; padding: 0 1.05rem; }
-@media (max-width: 860px) { .nav { display: none; } }
-@media (max-width: 420px) { .top .btn span { display: none; } }
+/* hero */
+.hero{position:relative;background:radial-gradient(ellipse at 80% 30%,#16305A 0%,var(--ink) 60%);color:#fff;padding:170px 0 0;overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center}
+.kicker{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;font-weight:500;color:rgba(255,255,255,.72);margin-bottom:30px}
+.kicker span{display:flex;align-items:center;gap:8px}
+.kicker span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent-l)}
+.hero h1{font-size:clamp(40px,5.6vw,76px);font-weight:700;line-height:1.12;letter-spacing:-.045em}
+.hero h1 em{font-style:normal;color:var(--accent-l)}
+.hero p{margin:28px 0 40px;font-size:clamp(16px,1.5vw,19px);line-height:1.75;color:rgba(255,255,255,.72);max-width:520px}
+.hero p b{color:#fff;font-weight:600}
+.hero .row{display:flex;flex-wrap:wrap;gap:12px}
+.art{position:relative;justify-self:center;width:min(100%,460px)}
+.ring{aspect-ratio:1;border-radius:50%;padding:14px;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.02));box-shadow:0 40px 80px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.08)}
+.ring canvas{width:100%;height:100%;border-radius:50%;display:block;background:#0B1527}
+.art-note{display:flex;justify-content:center;gap:18px;margin-top:20px;font-size:13px;color:rgba(255,255,255,.55)}
+.art-note i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.art-note .k1{background:#2A2F38}.art-note .k2{background:#24486F;outline:1px solid #6FA3D2}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:96px;border-top:1px solid var(--line-d)}
+.facts div{padding:28px 0 40px 28px;border-right:1px solid var(--line-d)}
+.facts div:first-child{padding-left:0}.facts div:last-child{border-right:0}
+.facts b{display:block;font-size:clamp(30px,3.4vw,44px);font-weight:700;letter-spacing:-.04em;line-height:1.1}
+.facts b small{font-size:.5em;font-weight:600;margin-left:4px;color:rgba(255,255,255,.7)}
+.facts span{display:block;margin-top:10px;font-size:15px;color:rgba(255,255,255,.78)}
+.facts em{font-style:normal;font-size:13px;color:rgba(255,255,255,.45)}
+@media (max-width:900px){.hero-in{grid-template-columns:1fr}.art{width:min(80%,360px);margin-top:20px}.hero{padding-top:130px}}
+@media (max-width:600px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){grid-column:1/-1;border-top:1px solid var(--line-d);padding-left:0;border-right:0}.facts div:nth-child(2){border-right:0}}
 
-/* 첫 화면 */
-.hero { position: relative; overflow: hidden; background: radial-gradient(60rem 30rem at 85% 30%, rgba(111, 163, 210, 0.10), transparent 60%), var(--bg); }
-.hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(42, 53, 80, 0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(42, 53, 80, 0.35) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.5), transparent 75%); mask-image: linear-gradient(180deg, rgba(0,0,0,0.5), transparent 75%); }
-.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 3rem; align-items: center; padding-block: 4.2rem 4.4rem; }
-@media (max-width: 920px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 2.2rem; padding-block: 2.6rem 3rem; } }
-.hero-copy { display: flex; flex-direction: column; gap: 1.35rem; min-width: 0; }
-.pill { align-self: flex-start; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.86rem; font-weight: 800; color: var(--cyan); background: linear-gradient(var(--cyan-soft), var(--cyan-soft)), var(--bg); border: 1px solid rgba(111, 163, 210, 0.35); border-radius: 999px; padding: 0.35rem 0.9rem; }
-.pill i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 4px rgba(111, 163, 210, 0.18); }
-.hero h1 { font-size: clamp(2.15rem, 4.7vw, 3.55rem); line-height: 1.22; }
-.hero h1 em { font-style: normal; color: var(--cyan); }
-.lede { font-size: 1.14rem; color: var(--text-2); max-width: 34rem; }
-.lede b { color: var(--text); font-weight: 700; }
-.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; margin-top: 0.3rem; }
-.stat { padding: 1rem 1.05rem; display: flex; flex-direction: column; gap: 0.15rem; }
-.stat b { font-size: clamp(1.3rem, 5.2vw, 1.9rem); font-weight: 800; color: var(--cyan); line-height: 1.15; white-space: nowrap; }
-.stat b small { font-size: 0.58em; margin-left: 0.1rem; }
-.stat span { font-size: 0.84rem; color: var(--text); font-weight: 700; }
-.stat em { font-style: normal; font-size: 0.78rem; color: var(--text-2); }
-@media (max-width: 420px) { .stats { gap: 0.5rem; } .stat { padding: 0.85rem 0.7rem; } .stat span { font-size: 0.78rem; } .stat em { font-size: 0.72rem; } }
-.creds { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem 1rem; border-top: 1px solid var(--line); padding-top: 1.1rem; }
-@media (max-width: 560px) { .creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem 0.6rem; } }
-.cred { display: flex; align-items: center; gap: 0.45rem; font-size: 0.86rem; font-weight: 800; color: var(--text); white-space: nowrap; min-width: 0; }
-.cred svg { width: 1.35rem; height: 1.35rem; color: var(--cyan); flex: none; }
-.art { position: relative; justify-self: center; width: min(100%, 30rem); max-width: 100%; aspect-ratio: 1 / 1; }
-.ring { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 50% 50%, #17213A 0%, #0F1729 70%); box-shadow: inset 0 0 0 10px #182136, inset 0 0 0 12px #2A3550, 0 40px 90px rgba(0, 0, 0, 0.5); }
-.ring canvas { width: 100%; height: 100%; display: block; }
-.art { margin-bottom: 1.8rem; }
-.art-note { position: absolute; left: 50%; top: calc(100% + 0.7rem); transform: translateX(-50%); display: flex; align-items: center; gap: 0.9rem; font-size: 0.8rem; color: var(--text-2); white-space: nowrap; }
-.art-note i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 3px; margin-right: 0.35rem; vertical-align: -0.05rem; }
-.art-note .k1 { background: #2E3340; border: 1.5px solid #4A5468; }
-.art-note .k2 { background: #172C45; border: 1.5px solid var(--cyan); }
-.art-note small { font-size: 0.74rem; color: var(--muted); }
-@media (max-width: 920px) {
-  /* 한 줄 배치에서는 필터 그림을 제목 뒤 배경으로 */
-  .art { position: absolute; z-index: 0; top: 0.6rem; right: -16vw; width: min(82vw, 25rem); margin: 0; opacity: 0.55; pointer-events: none; -webkit-mask-image: linear-gradient(180deg, #000 50%, transparent 88%); mask-image: linear-gradient(180deg, #000 50%, transparent 88%); }
-  .art-note { display: none; }
-  .hero-copy { position: relative; z-index: 1; }
-  .hero h1, .lede { text-shadow: 0 2px 16px rgba(15, 23, 41, 0.9), 0 0 2px rgba(15, 23, 41, 0.9); }
-}
-@media (max-width: 560px) { .hero .row { display: grid; grid-template-columns: minmax(0, 1fr); } }
+/* symptoms */
+.sym{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--text)}
+.sym li{padding:28px 22px 34px 0;border-bottom:1px solid var(--line);counter-increment:s}
+.sym li+li{padding-left:22px;border-left:1px solid var(--line)}
+.sym li::before{content:"0" counter(s);display:block;font-size:13px;font-weight:600;color:var(--accent);margin-bottom:40px}
+.sym b{font-size:18px;font-weight:600;line-height:1.5;letter-spacing:-.025em}
+.sym{counter-reset:s}
+@media (max-width:1000px){.sym{grid-template-columns:1fr 1fr}.sym li{padding:24px 18px 28px 0!important;border-left:0!important}.sym li:nth-child(even){padding-left:18px!important;border-left:1px solid var(--line)!important}.sym li::before{margin-bottom:20px}}
 
-/* 증상 */
-.grid-5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem; }
-@media (max-width: 1000px) { .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .grid-5 { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; } }
-.sym { padding: 1.2rem 1.2rem 1.2rem 1.45rem; display: flex; flex-direction: column; gap: 0.7rem; }
-@media (max-width: 520px) { .sym { flex-direction: row; align-items: center; padding: 0.9rem 1rem 0.9rem 1.3rem; } }
-.ico { width: 2.5rem; height: 2.5rem; border-radius: 10px; display: grid; place-items: center; background: var(--coral-soft); color: var(--coral); flex: none; }
-.ico svg { width: 1.3rem; height: 1.3rem; }
-.sym b { font-size: 1.04rem; line-height: 1.45; font-weight: 800; }
+/* process */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--text);counter-reset:p}
+.steps li{counter-increment:p;padding:28px 22px 34px 0;border-bottom:1px solid var(--line)}
+.steps li+li{padding-left:22px;border-left:1px solid var(--line)}
+.steps li::before{content:"0" counter(p);display:block;font-size:13px;font-weight:600;color:var(--accent);margin-bottom:40px}
+.steps b{display:block;font-size:20px;font-weight:700;letter-spacing:-.03em;margin-bottom:6px}
+.steps span{font-size:15px;color:var(--sub)}
+@media (max-width:900px){.steps{grid-template-columns:1fr}.steps li{padding:22px 0!important;border-left:0!important;display:grid;grid-template-columns:56px 1fr;align-items:baseline}.steps li::before{margin:0}.steps li span{grid-column:2}}
+.compare{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:center;margin-top:64px;padding:40px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
+.compare h3{font-size:24px;font-weight:700;letter-spacing:-.03em}
+.compare p{font-size:14px;color:var(--muted);margin-top:8px}
+.bars{display:grid;gap:18px}
+.bar-row{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;font-size:15px;font-weight:600}
+.track{position:relative;height:40px;background:var(--paper-2);border-radius:6px;overflow:hidden}
+.track i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;transform-origin:left;transform:scaleX(0);transition:transform 1.4s var(--ease)}
+.track i.old{width:100%;background:#C9CED6}
+.track i.new{width:22%;background:var(--accent)}
+.in .track i{transform:scaleX(1)}
+.track em{position:absolute;top:50%;transform:translateY(-50%);font-style:normal;font-size:14px;font-weight:600}
+.track .old-l{right:14px;color:var(--text)}
+.track .new-l{left:calc(22% + 12px);color:var(--accent)}
+.bar-row.k span{color:var(--accent)}
+.honest{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:28px;font-size:16px;color:var(--sub)}
+.honest b{color:var(--text);font-weight:600}
+@media (max-width:900px){.compare{grid-template-columns:1fr;gap:28px;padding:28px}}
 
-/* 세척 과정 */
-.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem; counter-reset: s; position: relative; }
-.steps::before { content: ""; position: absolute; left: 1.6rem; right: 1.6rem; top: 1.62rem; height: 2px; background: linear-gradient(90deg, var(--cyan), var(--line-2)); }
-@media (max-width: 920px) { .steps { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; } .steps::before { left: 1.62rem; right: auto; top: 1.6rem; bottom: 1.6rem; width: 2px; height: auto; background: linear-gradient(180deg, var(--cyan), var(--line-2)); } }
-.steps li { counter-increment: s; position: relative; display: flex; flex-direction: column; gap: 0.65rem; min-width: 0; }
-@media (max-width: 920px) { .steps li { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 0.9rem; align-items: center; } }
-.steps .dot { width: 3.25rem; height: 3.25rem; border-radius: 50%; background: var(--bg-deep); border: 2px solid var(--cyan); display: grid; place-items: center; font-weight: 800; color: var(--cyan); position: relative; z-index: 1; }
-.steps .dot::before { content: counter(s, decimal-leading-zero); }
-.steps .card { padding: 1.05rem 1.15rem; display: flex; flex-direction: column; gap: 0.3rem; }
-@media (max-width: 920px) { .steps .card { padding: 0.8rem 1rem; } }
-.steps b { font-size: 1.1rem; font-weight: 800; }
-.steps p { font-size: 0.95rem; color: var(--text-2); }
-.compare { margin-top: 1.3rem; padding: 1.4rem 1.5rem; display: grid; grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: 1.5rem; align-items: center; }
-@media (max-width: 760px) { .compare { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; padding: 1.2rem; } }
-.compare h3 { font-size: 1.2rem; }
-.compare p { color: var(--text-2); font-size: 0.88rem; margin-top: 0.3rem; }
-.bars { display: flex; flex-direction: column; gap: 0.75rem; }
-.bar-row { display: grid; grid-template-columns: 5.8rem minmax(0, 1fr); gap: 0.7rem; align-items: center; font-size: 0.92rem; font-weight: 800; color: var(--text-2); }
-.bar-row.k { color: var(--cyan); }
-.track { position: relative; height: 2rem; border-radius: 8px; background: rgba(42, 53, 80, 0.45); }
-.track i { position: absolute; top: 0; bottom: 0; border-radius: 8px; }
-.track .old { left: 50%; width: 50%; background: rgba(148, 163, 184, 0.3); }
-.track .new { left: 12.5%; width: 12.5%; background: var(--cyan); }
-.track em { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; font-style: normal; font-size: 0.86rem; font-weight: 800; white-space: nowrap; }
-.track .old-l { right: 0.7rem; color: var(--text); }
-.track .new-l { left: calc(25% + 0.6rem); color: var(--cyan); }
-.axis { display: grid; grid-template-columns: 5.8rem minmax(0, 1fr); gap: 0.7rem; font-size: 0.74rem; color: var(--muted); }
-.axis div { display: flex; justify-content: space-between; }
-.honest-row { display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-top: 1.2rem; color: var(--text-2); font-size: 0.97rem; }
-.honest-row b { color: var(--text); }
+/* price */
+.prices{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--text)}
+.price{padding:30px 24px 36px 0;border-bottom:1px solid var(--line)}
+.price+.price{padding-left:24px;border-left:1px solid var(--line)}
+.price span{font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--muted)}
+.price b{display:block;font-size:20px;font-weight:700;letter-spacing:-.03em;margin:8px 0 28px}
+.price .amt{font-size:15px;color:var(--sub)}
+.price .amt strong{font-size:34px;font-weight:700;color:var(--text);letter-spacing:-.04em;margin-right:4px}
+.price .amt.tbd{color:var(--muted)}
+@media (max-width:900px){.prices{grid-template-columns:1fr 1fr}.price{padding:24px 16px 28px 0!important;border-left:0!important}.price:nth-child(even){padding-left:16px!important;border-left:1px solid var(--line)!important}}
+.estimate{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:48px;padding:34px 40px;border-radius:var(--r);background:var(--ink);color:#fff}
+.estimate p{font-size:20px;font-weight:600;letter-spacing:-.025em}
+.estimate p span{display:block;font-size:15px;font-weight:400;color:rgba(255,255,255,.6);margin-top:4px}
+@media (max-width:600px){.estimate{padding:28px 24px}}
 
-/* 가격 */
-.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem; }
-@media (max-width: 1000px) { .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.price { padding: 1.35rem; display: flex; flex-direction: column; gap: 0.25rem; }
-@media (max-width: 520px) { .grid-4 { gap: 0.6rem; } .price { padding: 1.05rem; } }
-.price span { font-size: 0.84rem; color: var(--muted); font-weight: 800; }
-.price b { font-size: 1.1rem; font-weight: 800; }
-.price .amt { margin-top: 0.8rem; font-size: 1.6rem; font-weight: 800; color: var(--cyan); display: flex; align-items: baseline; gap: 0.35rem; }
-.price .amt small { font-size: 0.85rem; color: var(--text-2); font-weight: 700; }
-.blank { display: inline-block; width: 3.6rem; border-bottom: 2px dashed var(--line-2); height: 1.3rem; }
-.estimate { margin-top: 0.9rem; padding: 1.2rem 1.4rem 1.2rem 1.6rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-.estimate p { font-size: 1.05rem; font-weight: 800; }
-.estimate p span { display: block; font-size: 0.93rem; font-weight: 400; color: var(--text-2); }
+/* trust */
+.trust{display:grid;grid-template-columns:1.1fr 1fr;gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden}
+.trust>*{background:var(--ink-2);padding:44px 40px}
+.trust h3{font-size:28px;font-weight:700;letter-spacing:-.035em;margin:14px 0 14px}
+.trust p{color:rgba(255,255,255,.66);font-size:16px;line-height:1.8}
+.trust .small{font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--accent-l)}
+.trust ul{list-style:none;margin-top:30px;border-top:1px solid var(--line-d)}
+.trust li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-d);font-size:15px}
+.trust li b{font-weight:600}
+.trust li span{color:rgba(255,255,255,.55);text-align:right}
+.press{display:flex;flex-direction:column;transition:background .3s var(--ease)}
+.press:hover{background:var(--ink-3)}
+.press .src{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.55)}
+.press .src b{color:#fff;font-weight:600}
+.press blockquote{margin:22px 0 0;padding-left:18px;border-left:2px solid var(--accent-l);color:rgba(255,255,255,.75);font-size:16px;line-height:1.8}
+.press .more{margin-top:auto;padding-top:28px;font-weight:600}
+.nums{display:grid;grid-template-columns:1fr 1fr;margin-top:1px;gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:var(--r);overflow:hidden;margin-top:24px}
+.nums div{background:var(--ink-2);padding:32px 40px}
+.nums b{display:block;font-size:38px;font-weight:700;letter-spacing:-.04em}
+.nums strong{display:block;font-size:16px;font-weight:600;margin-top:6px}
+.nums span{font-size:14px;color:rgba(255,255,255,.55)}
+.history{margin-top:72px}
+.history h3{font-size:14px;font-weight:600;letter-spacing:.14em;color:var(--accent-l);margin-bottom:28px}
+.tl{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.4)}
+.tl li{position:relative;padding:30px 20px 0 0}
+.tl li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1.5px solid rgba(255,255,255,.6)}
+.tl li.now::before{background:var(--accent-l);border-color:var(--accent-l)}
+.tl .y{display:block;font-size:22px;font-weight:700;letter-spacing:-.03em}
+.tl li.now .y{color:var(--accent-l)}
+.tl b{display:block;font-size:16px;font-weight:600;margin:8px 0 4px}
+.tl .d{font-size:14px;color:rgba(255,255,255,.55)}
+.fine{margin-top:56px;font-size:13px;color:rgba(255,255,255,.42)}
+@media (max-width:900px){.trust{grid-template-columns:1fr}.trust>*{padding:32px 26px}.nums div{padding:26px}.tl{grid-template-columns:1fr;border-top:0;border-left:1px solid rgba(255,255,255,.4);margin-left:4px}.tl li{padding:0 0 28px 26px}.tl li::before{top:6px;left:-5px}}
 
-/* 회사 소개 */
-.trust-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.9rem; }
-@media (max-width: 920px) { .trust-grid { grid-template-columns: minmax(0, 1fr); } }
-.bh { padding: 1.8rem; display: flex; flex-direction: column; gap: 1rem; }
-@media (max-width: 520px) { .bh { padding: 1.4rem; } }
-.bh h3 { font-size: 1.75rem; }
-.bh > p { color: var(--text-2); }
-.bh ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
-@media (max-width: 520px) { .bh ul { grid-template-columns: minmax(0, 1fr); gap: 0.5rem; } .bh li { padding: 0.65rem 0.9rem; line-height: 1.5; } }
-.bh li { padding: 0.9rem 1rem; border-radius: 10px; background: var(--card-2); border: 1px solid var(--line); }
-.bh li b { display: block; font-weight: 800; }
-.bh li span { font-size: 0.87rem; color: var(--text-2); }
-.side { display: flex; flex-direction: column; gap: 0.9rem; min-width: 0; }
-.press { padding: 1.6rem; display: flex; flex-direction: column; gap: 0.85rem; text-decoration: none; transition: border-color 0.15s ease; }
-@media (max-width: 520px) { .press { padding: 1.3rem; } }
-.press:hover { border-color: var(--line-2); }
-.press-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-.press-label { font-size: 0.8rem; font-weight: 800; color: var(--cyan); border: 1px solid rgba(111, 163, 210, 0.35); border-radius: 999px; padding: 0.15rem 0.7rem; }
-.outlet { display: flex; align-items: baseline; gap: 0.6rem; }
-.outlet b { font-size: 1rem; font-weight: 800; }
-.outlet span { font-size: 0.84rem; color: var(--muted); }
-.press h3 { font-size: 1.22rem; line-height: 1.45; }
-.press blockquote { margin: 0; padding-left: 0.9rem; border-left: 2px solid var(--line-2); color: var(--text-2); font-size: 0.95rem; }
-.press .more { font-size: 0.92rem; font-weight: 800; color: var(--cyan); }
-.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; }
-@media (max-width: 520px) { .facts { gap: 0.6rem; } }
-.fact { padding: 1.2rem 1.25rem; display: flex; flex-direction: column; gap: 0.15rem; }
-@media (max-width: 520px) { .fact { padding: 1rem; } }
-.fact b { font-size: 1.7rem; font-weight: 800; color: var(--cyan); line-height: 1.2; }
-.fact strong { font-weight: 800; }
-.fact span { font-size: 0.86rem; color: var(--text-2); }
-.history { margin-top: 0.9rem; padding: 1.4rem 1.5rem; }
-.history h3 { font-size: 1.05rem; margin-bottom: 1.1rem; }
-.hl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem; position: relative; }
-.hl::before { content: ""; position: absolute; left: 0.4rem; right: 0.4rem; top: 0.42rem; height: 2px; background: var(--line-2); }
-@media (max-width: 860px) { .hl { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; } .hl::before { left: 0.42rem; right: auto; top: 0.5rem; bottom: 0.5rem; width: 2px; height: auto; } }
-.hl li { position: relative; padding-top: 1.5rem; min-width: 0; }
-.hl li::before { content: ""; position: absolute; left: 0; top: 0; width: 0.9rem; height: 0.9rem; border-radius: 50%; background: var(--card); border: 2px solid var(--cyan); }
-.hl li.now::before { background: var(--cyan); box-shadow: 0 0 0 5px rgba(111, 163, 210, 0.2); }
-@media (max-width: 860px) { .hl li { padding: 0 0 0 1.7rem; } .hl li::before { top: 0.35rem; } }
-.hl .y { display: block; font-weight: 800; color: var(--cyan); }
-.hl b { display: block; font-weight: 800; font-size: 0.95rem; }
-.hl .d { display: block; font-size: 0.83rem; color: var(--text-2); }
-.fine { margin-top: 1rem; font-size: 0.84rem; color: var(--muted); }
+/* fleet */
+.fleet{display:grid;grid-template-columns:1.4fr auto;gap:40px;align-items:center;padding:56px;border-radius:var(--r);background:var(--paper-2);border:1px solid var(--line)}
+.fleet h3{font-size:clamp(24px,2.6vw,34px);font-weight:700;letter-spacing:-.035em;margin:16px 0 12px}
+.fleet p{color:var(--sub);font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font-size:14px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--sub)}
+@media (max-width:900px){.fleet{grid-template-columns:1fr;padding:32px 26px}}
 
-/* 운수회사 */
-.fleet { padding: 1.6rem 1.8rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.2rem 2rem; align-items: center; }
-@media (max-width: 760px) { .fleet { grid-template-columns: minmax(0, 1fr); padding: 1.4rem; } }
-.fleet h3 { font-size: 1.35rem; margin-top: 0.3rem; }
-.fleet p { color: var(--text-2); margin-top: 0.3rem; }
-.tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.9rem; }
-.tags span { font-size: 0.84rem; font-weight: 800; color: var(--text); border: 1px solid var(--line-2); border-radius: 999px; padding: 0.25rem 0.75rem; }
+/* faq */
+.faq-in{display:grid;grid-template-columns:1fr 1.6fr;gap:64px}
+.qa{border-top:1px solid var(--text)}
+.qa div{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+.qa h3{font-size:18px;font-weight:600;letter-spacing:-.025em}
+.qa p{color:var(--sub);font-size:16px;line-height:1.8}
+@media (max-width:900px){.faq-in{grid-template-columns:1fr;gap:36px}.qa div{grid-template-columns:1fr;gap:8px}}
 
-/* 자주 묻는 질문 */
-.faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; }
-@media (max-width: 760px) { .faq { grid-template-columns: minmax(0, 1fr); gap: 0.6rem; } }
-.qa { padding: 1.3rem 1.4rem; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 0.25rem 0.6rem; }
-@media (max-width: 520px) { .qa { padding: 1.1rem; } }
-.qa::before { content: "Q"; grid-row: span 2; width: 1.8rem; height: 1.8rem; border-radius: 8px; background: var(--cyan-soft); color: var(--cyan); display: grid; place-items: center; font-weight: 800; font-size: 0.9rem; }
-.qa h3 { font-size: 1.06rem; line-height: 1.5; }
-.qa p { color: var(--text-2); font-size: 0.97rem; }
+/* visit */
+.visit-in{display:grid;grid-template-columns:1.1fr 1fr;gap:80px}
+.bigtel{display:block;font-size:clamp(48px,7vw,96px);font-weight:700;letter-spacing:-.05em;line-height:1;margin:34px 0 14px;transition:color .25s}
+.bigtel:hover{color:var(--accent-l)}
+.visit .sub{color:rgba(255,255,255,.6);font-size:16px}
+.visit .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.info{border-top:1px solid var(--line-d)}
+.info>div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line-d);font-size:16px}
+.info>div>span{color:rgba(255,255,255,.5);font-size:14px;padding-top:2px}
+.road{display:flex;align-items:center;gap:12px;margin:6px 0 4px;font-size:13px;color:rgba(255,255,255,.6)}
+.road .lane{position:relative;flex:1;height:2px;background:rgba(255,255,255,.25)}
+.road .lane::after{content:"대지남사 · 남사진위IC 1.5km";position:absolute;left:46%;top:-30px;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:600;color:var(--accent-l)}
+.road .lane::before{content:"";position:absolute;left:46%;top:-5px;width:12px;height:12px;border-radius:50%;background:var(--accent-l);transform:translateX(-50%)}
+.maps{display:flex;gap:10px;margin-top:28px}
+.maps .btn{height:50px;font-size:15px;flex:1}
+@media (max-width:900px){.visit-in{grid-template-columns:1fr;gap:56px}}
+@media (max-width:520px){.info>div{grid-template-columns:76px 1fr;font-size:15px}}
 
-/* 오시는 길 */
-.visit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.9rem; }
-@media (max-width: 920px) { .visit-grid { grid-template-columns: minmax(0, 1fr); } }
-.visit-card { padding: 1.7rem; display: flex; flex-direction: column; gap: 1.1rem; }
-@media (max-width: 520px) { .visit-card { padding: 1.3rem; } }
-.visit-card > b { font-weight: 800; }
-.phone { font-size: clamp(2.1rem, 4.4vw, 2.8rem); font-weight: 800; color: var(--cyan); text-decoration: none; letter-spacing: -0.01em; line-height: 1.1; }
-.vrow { display: grid; grid-template-columns: 4.8rem minmax(0, 1fr); gap: 0.8rem; }
-.vrow span { color: var(--muted); font-size: 0.92rem; font-weight: 700; }
-.vrow b { font-weight: 700; }
-.vrow b .ln { display: block; color: var(--text); font-size: 1rem; font-weight: 700; }
-.vrow small { display: block; color: var(--text-2); font-weight: 400; font-size: 0.92rem; }
-.road { margin-top: 2.3rem; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.8rem; align-items: center; font-size: 0.92rem; font-weight: 800; color: var(--text-2); }
-.road .lane { position: relative; height: 6px; border-radius: 999px; background: linear-gradient(90deg, var(--line-2), var(--cyan) 50%, var(--line-2)); }
-.road .lane::before { content: ""; position: absolute; left: 50%; top: 50%; width: 1rem; height: 1rem; border-radius: 50%; background: var(--cyan); transform: translate(-50%, -50%); box-shadow: 0 0 0 6px rgba(111, 163, 210, 0.2); }
-.road .lane::after { content: "남사진위IC 1.5km"; position: absolute; left: 50%; bottom: 1.1rem; transform: translateX(-50%); font-size: 0.84rem; color: var(--cyan); white-space: nowrap; }
-.road-note { color: var(--text-2); font-size: 0.94rem; }
+footer{background:#070E1A;color:rgba(255,255,255,.5);font-size:14px;padding:56px 0 120px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px}
+footer .brand{margin-bottom:16px}
+footer .brand b{color:#fff}
+footer p{margin:3px 0}
+footer .links{display:flex;gap:24px}
+footer .links a{color:rgba(255,255,255,.8);font-weight:500}
+footer .links a:hover{color:#fff}
+footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:13px}
+@media (min-width:861px){footer{padding-bottom:56px}}
 
-/* 바닥글 */
-footer { background: var(--bg-deep); border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; padding-block: 2.6rem 6.5rem; }
-footer .wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1.5rem 3rem; }
-@media (max-width: 760px) { footer .wrap { grid-template-columns: minmax(0, 1fr); } }
-@media (min-width: 761px) { footer { padding-bottom: 2.6rem; } }
-.foot-brand { display: flex; flex-direction: column; gap: 0.35rem; }
-.foot-brand .brand { margin-bottom: 0.4rem; }
-.foot-links { display: flex; flex-direction: column; gap: 0.4rem; }
-.foot-links b { color: var(--text-2); font-weight: 800; margin-bottom: 0.2rem; }
-.foot-links a { text-decoration: none; color: var(--text-2); }
-.foot-links a:hover { color: var(--text); }
-.copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:none;gap:6px;padding:6px;border-radius:14px;background:rgba(10,20,36,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 32px rgba(0,0,0,.28)}
+.mbar a{flex:1;height:48px;display:flex;align-items:center;justify-content:center;border-radius:10px;font-size:15px;font-weight:600;color:rgba(255,255,255,.85)}
+.mbar a.main{background:#fff;color:var(--ink)}
+@media (max-width:860px){.mbar{display:flex}}
 
-/* 휴대폰 하단 문의 바 */
-.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 35; display: none; gap: 0.5rem; padding: 0.6rem max(12px, env(safe-area-inset-right, 0px)) calc(0.6rem + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); background: rgba(11, 17, 32, 0.96); border-top: 1px solid var(--line); }
-.dock .btn { flex: 1; min-height: 3.1rem; font-size: 0.98rem; padding: 0 0.5rem; }
-@media (max-width: 760px) { .dock { display: flex; } }
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.track i{transition:none;transform:scaleX(1)}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#top"><span class="mark" aria-hidden="true"><i></i></span><span class="brand-text"><b>K-Dissolve</b><span>대지남사서비스 · 현대 블루핸즈 남사점</span></span></a>
-    <nav class="nav" aria-label="메뉴">
-      <a href="#process">세척 과정</a><a href="#price">가격</a><a href="#trust">회사 소개</a><a href="#faq">자주 묻는 질문</a><a href="#visit">오시는 길</a>
+<header id="hd">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>K-Dissolve</b><span>대지남사서비스 · 현대 블루핸즈 남사</span></a>
+    <nav class="menu">
+      <a href="#process">세척 과정</a><a href="#price">가격</a><a href="#trust">회사 소개</a><a href="#faq">자주 묻는 질문</a><a href="#visit">오시는 길</a><a href="../">대지남사 홈</a>
     </nav>
-    <a class="btn btn-cy" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>전화 상담</span></a>
+    <a class="tel" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>1577-1335</span></a>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <span class="pill"><i aria-hidden="true"></i>현대 블루핸즈 남사점 · DPF 탈거 세척</span>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <div class="kicker"><span>현대 공식 블루핸즈</span><span>지정 종합검사장</span><span>DPF 탈거 세척</span></div>
         <h1>막힌 DPF,<br><em>교체하기 전에</em><br>세척부터 확인하세요</h1>
-        <p class="lede">직접 개발한 <b>K-Dissolve 장비</b>로 떼어 내 세척하고, <b>1년 동안 품질을 보증</b>합니다.</p>
+        <p>직접 개발한 <b>K-Dissolve 장비</b>로 떼어 내 세척하고, <b>1년 동안 품질을 보증</b>합니다.</p>
         <div class="row">
-          <a class="btn btn-cy" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>전화 <span class="n">1577-1335</span></a>
-          <a class="btn btn-kakao" href="#visit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카톡 상담</a>
-        </div>
-        <div class="stats">
-          <div class="card stat"><b class="n">1~2<small>시간</small></b><span>세척 시간</span><em>기존 반나절~하루</em></div>
-          <div class="card stat"><b class="n">1<small>년</small></b><span>품질 보증</span><em>세척일로부터</em></div>
-          <div class="card stat"><b>전 차종</b><span>디젤 차량</span><em>수입차 포함</em></div>
-        </div>
-        <div class="creds">
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>현대 공식 블루핸즈</span>
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg>1급 공업사</span>
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>지정 종합검사장</span>
-          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="6"/><path d="M9 15l-1 6 4-2 4 2-1-6"/></svg>1년 품질 보증</span>
+          <a class="btn btn-light" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>전화 상담 1577-1335</a>
+          <a class="btn btn-ghost" data-link="kakao" href="#">카톡 상담 <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" data-ifnot="kakao" href="sms:01062990823">문자로 사진 보내기 <span class="arrow">→</span></a>
         </div>
       </div>
       <div class="art" aria-hidden="true">
         <div class="ring"><canvas id="filter"></canvas></div>
-        <span class="art-note"><span><i class="k1"></i>막힌 칸</span><span><i class="k2"></i>세척된 칸</span><small>DPF 단면 · 설명용 그림</small></span>
+        <div class="art-note"><span><i class="k1"></i>막힌 칸</span><span><i class="k2"></i>세척된 칸</span><span>DPF 단면 · 설명용 그림</span></div>
       </div>
     </div>
-  </section>
+    <div class="facts">
+      <div><b class="n">1~2<small>시간</small></b><span>세척 시간</span><em>기존 반나절~하루</em></div>
+      <div><b class="n">1<small>년</small></b><span>품질 보증</span><em>세척일로부터</em></div>
+      <div><b>전 차종</b><span>디젤 차량</span><em>화물차 · 버스 · 승용 · 수입차</em></div>
+    </div>
+  </div>
+</section>
 
-  <section class="sec" id="symptoms">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">이런 증상이면</span>
-        <h2>DPF를 점검할 때가 됐습니다</h2>
-        <p>계기판 사진을 카톡으로 보내 주시면 세척으로 되는지 먼저 봐 드립니다.</p>
-      </div>
-      <div class="grid-5">
-        <div class="card bar sym"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="7" width="16" height="10" rx="3"/><path d="M8 7V5M16 7V5M8 12h8"/></svg></span><b>DPF 경고등이 자주 켜진다</b></div>
-        <div class="card bar sym"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 18l-4-5"/></svg></span><b>출력이 떨어지고 연비가 나빠졌다</b></div>
-        <div class="card bar sym"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg></span><b>강제재생을 해도 금방 다시 막힌다</b></div>
-        <div class="card bar sym"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 16c0-3 2-4 4-4s3-3 6-3 4 2 4 4"/><path d="M4 20h16"/></svg></span><b>매연 검사에서 불합격했다</b></div>
-        <div class="card bar sym"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span><b>8만~10만 km 넘게 세척한 적이 없다</b></div>
+<section id="symptoms">
+  <div class="wrap">
+    <div class="head rv"><div><span class="label">Symptoms</span><h2>이런 증상이면<br>DPF를 점검할 때입니다</h2></div><p class="lead">계기판 사진을 보내 주시면 세척으로 되는지 먼저 봐 드립니다.</p></div>
+    <ol class="sym rv">
+      <li><b>DPF 경고등이 자주 켜진다</b></li>
+      <li><b>출력이 떨어지고 연비가 나빠졌다</b></li>
+      <li><b>강제재생을 해도 금방 다시 막힌다</b></li>
+      <li><b>매연 검사에서 불합격했다</b></li>
+      <li><b>8만~10만 km 넘게 세척한 적이 없다</b></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt" id="process">
+  <div class="wrap">
+    <div class="head rv"><div><span class="label">Process</span><h2>재생으로 안 타는<br>애쉬까지 씻어 냅니다</h2></div><p class="lead">고속도로를 달려도 엔진오일이 남긴 재(애쉬)는 타지 않고 쌓입니다. 그래서 떼어 내 씻어야 합니다.</p></div>
+    <ol class="steps rv">
+      <li><b>진단</b><span>세척으로 되는지 먼저 확인</span></li>
+      <li><b>탈거</b><span>DPF를 차에서 떼어 냄</span></li>
+      <li><b>분해 세척</b><span>특수 해리액으로 오염물질 분해</span></li>
+      <li><b>배출</b><span>거품과 강한 흡입으로 밀어냄</span></li>
+      <li><b>건조·장착</b><span>빠르게 말려 다시 장착</span></li>
+    </ol>
+    <div class="compare rv">
+      <div><h3>세척 시간을 크게 줄였습니다</h3><p>머니투데이 보도(2026.06.29)에 실린 회사 설명 기준</p></div>
+      <div class="bars" role="img" aria-label="기존 방식 반나절에서 하루, K-Dissolve 1에서 2시간">
+        <div class="bar-row"><span>기존 방식</span><div class="track"><i class="old"></i><em class="old-l">반나절~하루</em></div></div>
+        <div class="bar-row k"><span>K-Dissolve</span><div class="track"><i class="new"></i><em class="new-l">1~2시간</em></div></div>
       </div>
     </div>
-  </section>
+    <div class="honest rv">
+      <p>필터가 깨져 세척으로 안 되면 <b>교체가 맞다고 솔직하게 말씀드립니다.</b></p>
+      <p>대상 <b>디젤 전 차종</b> · 화물차 · 버스 · 승용 · 수입차</p>
+    </div>
+  </div>
+</section>
 
-  <section class="sec deep" id="process">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">세척 과정</span>
-        <h2>재생으로 안 타는 애쉬까지 씻어 냅니다</h2>
-        <p>고속도로를 달려도 엔진오일이 남긴 재(애쉬)는 타지 않고 쌓입니다. 그래서 떼어 내 씻어야 합니다.</p>
+<section id="price">
+  <div class="wrap">
+    <div class="head rv"><div><span class="label">Price</span><h2>차종별 세척 가격</h2></div><p class="lead">추가 비용이 생길 수 있는 부분은 작업 전에 미리 말씀드립니다.</p></div>
+    <div class="prices rv">
+      <!-- 가격 정해지면: <div class="amt"><strong>00</strong>만 원부터</div> 로 바꾸기 -->
+      <div class="price"><span>1톤 화물</span><b>포터 · 봉고</b><div class="amt tbd">전화로 안내</div></div>
+      <div class="price"><span>중형 트럭</span><b>마이티 · 메가트럭</b><div class="amt tbd">전화로 안내</div></div>
+      <div class="price"><span>대형 트럭</span><b>엑시언트 · 덤프</b><div class="amt tbd">전화로 안내</div></div>
+      <div class="price"><span>승용 · SUV</span><b>국산 · 수입 디젤</b><div class="amt tbd">전화로 안내</div></div>
+    </div>
+    <div class="estimate rv">
+      <p>교체 견적을 받으셨나요?<span>견적서를 보내 주시면 세척으로 되는지 먼저 봐 드립니다.</span></p>
+      <a class="btn btn-kakao" data-link="kakao" href="#">카톡으로 견적서 보내기</a>
+      <a class="btn btn-light" data-ifnot="kakao" href="sms:01062990823">문자로 견적서 보내기</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="trust">
+  <div class="wrap">
+    <div class="head rv"><div><span class="label">About</span><h2>처음 맡기셔도<br>믿을 수 있게</h2></div><p class="lead">K-Dissolve는 현대 블루핸즈 남사점을 운영하는 대지남사서비스가 직접 개발한 세척 장비입니다.</p></div>
+    <div class="trust rv">
+      <div>
+        <span class="small">가장 큰 차이</span>
+        <h3>현대 공식 블루핸즈</h3>
+        <p>보증 수리부터 순정 부품, 대형 상용차 정비까지 같은 곳에서 이어집니다.</p>
+        <ul>
+          <li><b>현대 보증수리</b><span>보증 기간 차량도 같은 곳에서</span></li>
+          <li><b>현대모비스 순정 부품</b><span>교체가 필요할 때도 순정 부품</span></li>
+          <li><b>중대형 상용차 전담</b><span>트럭·버스 전담 블루핸즈</span></li>
+          <li><b>현대 긴급출동 연계</b><span class="n">080-600-6000</span></li>
+        </ul>
       </div>
-      <ol class="steps">
-        <li><span class="dot" aria-hidden="true"></span><div class="card"><b>진단</b><p>세척으로 되는지 먼저 확인</p></div></li>
-        <li><span class="dot" aria-hidden="true"></span><div class="card"><b>탈거</b><p>DPF를 차에서 떼어 냄</p></div></li>
-        <li><span class="dot" aria-hidden="true"></span><div class="card"><b>분해 세척</b><p>특수 해리액으로 오염물질 분해</p></div></li>
-        <li><span class="dot" aria-hidden="true"></span><div class="card"><b>배출</b><p>거품과 강한 흡입으로 밀어냄</p></div></li>
-        <li><span class="dot" aria-hidden="true"></span><div class="card"><b>건조·장착</b><p>빠르게 말려 다시 장착</p></div></li>
+      <a class="press" href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">
+        <span class="small">언론 보도</span>
+        <h3>대지남사서비스, 디젤 차량 DPF 청소 장비 'K-Dissolve' 출시</h3>
+        <span class="src"><b>머니투데이</b><span class="n">2026. 06. 29</span></span>
+        <blockquote>떼어 낸 필터에 특수 해리액을 넣어 오염물질을 분해하는 방식으로, 기존에 반나절에서 하루 걸리던 공정을 1~2시간으로 줄였다.</blockquote>
+        <span class="more">기사 원문 보기 <span class="arrow">→</span></span>
+      </a>
+    </div>
+    <div class="nums rv">
+      <div><b>40여 년</b><strong>특장차 제조</strong><span>대지정공 · 탱크로리·특수 차량</span></div>
+      <div><b>3천여 평</b><strong>대형 정비 설비</strong><span>대형 리프트 · 크레인 · 도장 부스</span></div>
+    </div>
+    <div class="history rv">
+      <h3>HISTORY</h3>
+      <ol class="tl">
+        <li><span class="y">40여 년</span><b>대지정공 특장차 제조</b><span class="d">탱크로리·특수 차량</span></li>
+        <li><span class="y n">2017</span><b>대지남사서비스 설립</b><span class="d">블루핸즈 가맹 · 금탑산업훈장</span></li>
+        <li><span class="y n">2018</span><b>자동차 종합검사 시작</b><span class="d">승용·상용 전 차종</span></li>
+        <li><span class="y n">2023~25</span><b>119 구급차 장비 납품</b><span class="d">같은 대표의 DSV · 음압시스템 70대</span></li>
+        <li class="now"><span class="y n">2026</span><b>K-Dissolve 출시</b><span class="d">머니투데이 보도</span></li>
       </ol>
-      <div class="card compare">
-        <div>
-          <h3>세척 시간을 크게 줄였습니다</h3>
-          <p>머니투데이 보도(2026.06.29)에 실린 회사 설명 기준</p>
-        </div>
-        <div class="bars" role="img" aria-label="기존 방식 반나절에서 하루, K-Dissolve 1에서 2시간">
-          <div class="bar-row"><span>기존 방식</span><div class="track"><i class="old"></i><em class="old-l">반나절~하루</em></div></div>
-          <div class="bar-row k"><span>K-Dissolve</span><div class="track"><i class="new"></i><em class="new-l">1~2시간</em></div></div>
-          <div class="axis"><span></span><div><span>0</span><span>2시간</span><span>4시간</span><span>6시간</span><span>8시간+</span></div></div>
-        </div>
-      </div>
-      <div class="honest-row">
-        <p>필터가 깨져 세척으로 안 되면 <b>교체가 맞다고 솔직하게 말씀드립니다.</b></p>
-        <p>대상 <b>디젤 전 차종</b> · 화물차 · 버스 · 승용 · 수입차</p>
-      </div>
     </div>
-  </section>
+    <p class="fine">K-Dissolve는 대지남사서비스의 자체 장비이며, 현대자동차가 인증한 제품은 아닙니다. 세척 시간 비교는 언론에 실린 회사 설명입니다.</p>
+  </div>
+</section>
 
-  <section class="sec" id="price">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">가격</span>
-        <h2>차종별 세척 가격</h2>
-        <p>추가 비용이 생길 수 있는 부분은 작업 전에 미리 말씀드립니다.</p>
+<section>
+  <div class="wrap">
+    <div class="fleet rv">
+      <div>
+        <span class="label">For Fleets</span>
+        <h3>차가 여러 대라면,<br>세척 일정을 맞춰 드립니다</h3>
+        <p>운수회사 · 지입사 · 특장차 운영사. 정비·검사 날에 세척까지 한 번에 하면 차가 서 있는 시간이 줄어듭니다.</p>
+        <div class="tags"><span>차량별 세척 시기 관리</span><span>정비·검사와 한 번에</span><span>현장 방문 세척 상담</span></div>
       </div>
-      <div class="grid-4">
-        <div class="card price"><span>1톤 화물</span><b>포터 · 봉고</b><div class="amt"><span class="blank"></span><small>만 원부터</small></div></div>
-        <div class="card price"><span>중형 트럭</span><b>마이티 · 메가트럭</b><div class="amt"><span class="blank"></span><small>만 원부터</small></div></div>
-        <div class="card price"><span>대형 트럭</span><b>엑시언트 · 덤프</b><div class="amt"><span class="blank"></span><small>만 원부터</small></div></div>
-        <div class="card price"><span>승용 · SUV</span><b>국산 · 수입 디젤</b><div class="amt"><span class="blank"></span><small>만 원부터</small></div></div>
-      </div>
-      <div class="card bar cy estimate">
-        <p>교체 견적을 받으셨나요?<span>견적서를 보내 주시면 세척으로 되는지 먼저 봐 드립니다.</span></p>
-        <a class="btn btn-kakao" href="#visit">카톡으로 견적서 보내기</a>
-      </div>
+      <a class="btn btn-ink" href="tel:15771335">단체 상담 전화 <span class="arrow">→</span></a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="sec deep" id="trust">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">회사 소개</span>
-        <h2>처음 맡기셔도 믿을 수 있게</h2>
-      </div>
-      <div class="trust-grid">
-        <div class="card hi bh">
-          <span class="eyebrow">가장 큰 차이</span>
-          <h3>현대 공식 블루핸즈</h3>
-          <p>K-Dissolve는 현대 블루핸즈 남사점을 운영하는 대지남사서비스가 직접 개발한 세척 장비입니다.</p>
-          <ul>
-            <li><b>현대 보증수리</b><span>보증 기간 차량도 같은 곳에서</span></li>
-            <li><b>현대모비스 순정 부품</b><span>교체가 필요할 때도 순정 부품</span></li>
-            <li><b>중대형 상용차 전담</b><span>트럭·버스 전담 블루핸즈</span></li>
-            <li><b>현대 긴급출동 연계</b><span class="n">080-600-6000</span></li>
-          </ul>
-        </div>
-        <div class="side">
-          <a class="card press" href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">
-            <div class="press-top"><span class="press-label">언론 보도</span><span class="outlet"><b>머니투데이</b><span class="n">2026. 06. 29</span></span></div>
-            <h3>대지남사서비스, 디젤 차량 DPF 청소 장비 'K-Dissolve' 출시</h3>
-            <blockquote>떼어 낸 필터에 특수 해리액을 넣어 오염물질을 분해하는 방식으로, 기존에 반나절에서 하루 걸리던 공정을 1~2시간으로 줄였다.</blockquote>
-            <span class="more">기사 원문 보기 →</span>
-          </a>
-          <div class="facts">
-            <div class="card fact"><b>40여 년</b><strong>특장차 제조</strong><span>대지정공 · 탱크로리·특수 차량</span></div>
-            <div class="card fact"><b>3천여 평</b><strong>대형 정비 설비</strong><span>대형 리프트 · 크레인 · 도장 부스</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="card history">
-        <h3>걸어온 길</h3>
-        <ol class="hl">
-          <li><span class="y">40여 년</span><b>대지정공 특장차 제조</b><span class="d">탱크로리·특수 차량</span></li>
-          <li><span class="y n">2017</span><b>대지남사서비스 설립</b><span class="d">블루핸즈 가맹 · 금탑산업훈장</span></li>
-          <li><span class="y n">2018</span><b>자동차 종합검사 시작</b><span class="d">승용·상용 전 차종</span></li>
-          <li><span class="y n">2023~25</span><b>119 구급차 장비 납품</b><span class="d">같은 대표의 DSV · 음압시스템 70대</span></li>
-          <li class="now"><span class="y n">2026</span><b>K-Dissolve 출시</b><span class="d">머니투데이 보도</span></li>
-        </ol>
-      </div>
-      <p class="fine">K-Dissolve는 대지남사서비스의 자체 장비이며, 현대자동차가 인증한 제품은 아닙니다. 세척 시간 비교는 언론에 실린 회사 설명입니다.</p>
+<section class="alt" id="faq">
+  <div class="wrap faq-in">
+    <div class="rv"><span class="label">FAQ</span><h2>기사님들이<br>많이 물어보시는 것</h2></div>
+    <div class="qa rv">
+      <div><h3>얼마나 자주 해야 하나요?</h3><p>보통 8만~10만 km 전후로 권합니다. 시내 위주로 달리면 조금 더 일찍 점검하세요.</p></div>
+      <div><h3>고속도로를 많이 달리면 안 해도 되죠?</h3><p>그을음은 타지만, 애쉬(재)는 타지 않고 계속 쌓입니다.</p></div>
+      <div><h3>첨가제를 넣으면 되지 않나요?</h3><p>첨가제는 그을음이 잘 타게 도울 뿐, 쌓인 애쉬를 빼내지는 못합니다.</p></div>
+      <div><h3>수입차도 되나요?</h3><p>디젤 전 차종을 세척합니다. 수입차도 됩니다.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="sec">
-    <div class="wrap">
-      <div class="card hi fleet">
-        <div>
-          <span class="eyebrow">운수회사 · 지입사 · 특장차 운영사</span>
-          <h3>차가 여러 대라면, 세척 일정을 맞춰 드립니다</h3>
-          <p>정비·검사 날에 세척까지 한 번에 하면 차가 서 있는 시간이 줄어듭니다.</p>
-          <div class="tags"><span>차량별 세척 시기 관리</span><span>정비·검사와 한 번에</span><span>현장 방문 세척 상담</span></div>
-        </div>
-        <a class="btn btn-cy" href="tel:15771335">단체 상담 전화</a>
+<section class="dark visit" id="visit">
+  <div class="wrap visit-in">
+    <div class="rv">
+      <span class="label">Contact</span>
+      <a class="bigtel n" href="tel:15771335">1577-1335</a>
+      <p class="sub">경부고속도로 타시다가 들르세요. 평일 08:30–18:00 · 토 08:30–13:00</p>
+      <div class="row">
+        <a class="btn btn-light" href="tel:15771335">전화하기</a>
+        <a class="btn btn-kakao" data-link="kakao" href="#">카톡 상담</a>
+        <a class="btn btn-ghost" data-ifnot="kakao" href="sms:01062990823">문자 보내기</a>
       </div>
     </div>
-  </section>
-
-  <section class="sec deep" id="faq">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">자주 묻는 질문</span>
-        <h2>기사님들이 많이 물어보시는 것</h2>
+    <div class="rv">
+      <div class="info">
+        <div><span>주소</span><b style="font-weight:600">경기도 용인시 처인구 남사읍 천덕산로 23</b></div>
+        <div><span>찾아오기</span><div>남사진위IC에서 1.5km, 오산IC에서 6km<br><small style="color:rgba(255,255,255,.5)">경기도소방학교 옆 · 대형차도 바로 들어오실 수 있습니다</small></div></div>
+        <div><span>경부선</span><div class="road" aria-label="경부고속도로 오산IC와 안성IC 사이, 남사진위IC에서 1.5km"><span>오산IC</span><span class="lane"></span><span>안성IC</span></div></div>
+        <div><span>휴무</span>일요일 · 공휴일</div>
       </div>
-      <div class="faq">
-        <div class="card qa"><h3>얼마나 자주 해야 하나요?</h3><p>보통 8만~10만 km 전후로 권합니다. 시내 위주로 달리면 조금 더 일찍 점검하세요.</p></div>
-        <div class="card qa"><h3>고속도로를 많이 달리면 안 해도 되죠?</h3><p>그을음은 타지만, 애쉬(재)는 타지 않고 계속 쌓입니다.</p></div>
-        <div class="card qa"><h3>첨가제를 넣으면 되지 않나요?</h3><p>첨가제는 그을음이 잘 타게 도울 뿐, 쌓인 애쉬를 빼내지는 못합니다.</p></div>
-        <div class="card qa"><h3>수입차도 되나요?</h3><p>디젤 전 차종을 세척합니다. 수입차도 됩니다.</p></div>
+      <div class="maps">
+        <a class="btn btn-ghost" href="https://map.naver.com/p/search/%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">네이버 지도</a>
+        <a class="btn btn-ghost" href="https://map.kakao.com/?q=%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">카카오맵</a>
       </div>
     </div>
-  </section>
-
-  <section class="sec" id="visit">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">오시는 길 · 문의</span>
-        <h2>경부고속도로 타시다가 들르세요</h2>
-        <p>남사진위IC에서 1.5km, 오산IC에서 6km입니다. 경기도소방학교 옆입니다.</p>
-      </div>
-      <div class="visit-grid">
-        <div class="card visit-card">
-          <a class="phone n" href="tel:15771335">1577-1335</a>
-          <div class="vrow"><span>주소</span><b>경기도 용인시 처인구 남사읍 천덕산로 23</b></div>
-          <div class="vrow"><span>영업시간</span><b><span class="ln">평일 08:30~18:00</span><span class="ln">토요일 08:30~13:00</span><small>일요일·공휴일 휴무</small></b></div>
-          <div class="row"><a class="btn btn-cy" href="tel:15771335">전화하기</a><a class="btn btn-kakao" href="#visit">카톡 상담</a></div>
-        </div>
-        <div class="card visit-card">
-          <b>경부고속도로 위치</b>
-          <div class="road" aria-label="경부고속도로 남사진위IC에서 1.5km, 오산IC와 안성IC 사이"><span>오산IC</span><span class="lane"></span><span>안성IC</span></div>
-          <p class="road-note">중대형 트럭·버스 전담 블루핸즈라 대형차도 바로 들어오실 수 있습니다.</p>
-          <div class="row">
-            <a class="btn btn-line" href="https://map.naver.com/p/search/%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">네이버 지도</a>
-            <a class="btn btn-line" href="https://map.kakao.com/?q=%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">카카오맵</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot-brand">
-      <a class="brand" href="#top"><span class="mark" aria-hidden="true"><i></i></span><span class="brand-text"><b>K-Dissolve</b><span>대지남사서비스 · 현대 블루핸즈 남사점</span></span></a>
-      <span>대지남사서비스(주) · 대표 조항우</span>
-      <span>경기도 용인시 처인구 남사읍 천덕산로 23</span>
-      <span>대표번호 <span class="n">1577-1335</span></span>
-    </div>
-    <div class="foot-links">
-      <b>바로가기</b>
-      <a href="../">대지남사서비스 홈페이지</a>
-      <a href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">언론 보도</a>
-      <a href="#visit">오시는 길</a>
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><b>K-Dissolve</b><span>대지남사서비스 · 현대 블루핸즈 남사</span></a>
+        <p>대지남사서비스(주) · 대표 조항우 · 경기도 용인시 처인구 남사읍 천덕산로 23</p>
+        <p>대표번호 1577-1335</p>
+      </div>
+      <div class="links">
+        <a href="../">대지남사서비스 홈페이지</a>
+        <a href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">언론 보도</a>
+      </div>
     </div>
     <p class="copy">© 2026 대지남사서비스(주). K-Dissolve는 대지남사서비스가 직접 개발한 DPF 세척 장비입니다.</p>
   </div>
 </footer>
 
-<div class="dock">
-  <a class="btn btn-cy" href="tel:15771335">전화</a>
-  <a class="btn btn-kakao" href="#visit">카톡 상담</a>
-  <a class="btn btn-line" href="https://map.naver.com/p/search/%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">길찾기</a>
-</div>
+<nav class="mbar">
+  <a class="main" href="tel:15771335">전화 상담</a>
+  <a data-link="kakao" href="#">카톡 상담</a>
+  <a data-ifnot="kakao" href="sms:01062990823">문자</a>
+  <a href="https://map.naver.com/p/search/%EB%8C%80%EC%A7%80%EB%82%A8%EC%82%AC%EC%84%9C%EB%B9%84%EC%8A%A4" target="_blank" rel="noopener">길찾기</a>
+</nav>
 
+<script>
+/* 연결할 주소. kakao가 비어 있으면 카톡 버튼은 숨고 그 자리에 문자 버튼이 보입니다. */
+var LINKS = {
+  kakao: ""   /* 카카오톡 채널 만들면 https://pf.kakao.com/_xxxx/chat 넣기 */
+};
+document.querySelectorAll("[data-link]").forEach(function (a) {
+  var url = LINKS[a.dataset.link];
+  if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; } else a.style.display = "none";
+});
+document.querySelectorAll("[data-ifnot]").forEach(function (a) { if (LINKS[a.dataset.ifnot]) a.style.display = "none"; });
+var hd = document.getElementById("hd");
+function onScroll(){ hd.classList.toggle("solid", window.scrollY > 40); }
+onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
+if ("IntersectionObserver" in window) {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {rootMargin: "0px 0px -8% 0px"});
+  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+} else document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("in"); });
+</script>
 <script>
 (function () {
   // 첫 화면 그림: DPF 필터 단면(벌집). 거품 띠가 지나가며 그을음·애쉬로 막힌 칸이 뚫리는 장면을 반복
