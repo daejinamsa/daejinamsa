@@ -140,6 +140,22 @@ header.solid{background:rgba(10,20,36,.92);backdrop-filter:saturate(1.4) blur(14
 .vm b{display:block;font-size:17px;font-weight:600;line-height:1.5;margin-top:8px;letter-spacing:-.02em}
 @media (max-width:900px){.about{grid-template-columns:1fr;gap:44px}.about figure img{aspect-ratio:4/3}}
 
+.nums{display:grid;grid-template-columns:repeat(3,1fr);margin-top:96px;border-top:1px solid var(--text)}
+.nums div{padding:30px 28px 34px 0;border-bottom:1px solid var(--line)}
+.nums div+div{padding-left:28px;border-left:1px solid var(--line)}
+.nums b{display:block;font-size:clamp(30px,3.2vw,42px);font-weight:700;letter-spacing:-.04em;line-height:1.1}
+.nums span{display:block;margin-top:12px;font-size:15px;color:var(--sub);line-height:1.6}
+.history{margin-top:88px}
+.tl{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);margin-top:36px;border-top:1px solid var(--text)}
+.tl li{position:relative;padding:30px 20px 0 0}
+.tl li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:#fff;border:1.5px solid var(--text)}
+.tl li.now::before{background:var(--accent);border-color:var(--accent)}
+.tl .y{display:block;font-size:22px;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.tl li.now .y{color:var(--accent)}
+.tl b{display:block;font-size:16px;font-weight:600;margin:8px 0 4px}
+.tl .d{font-size:14px;color:var(--sub)}
+.tl .d a{color:var(--accent);font-weight:600}
+@media (max-width:900px){.nums{grid-template-columns:1fr;margin-top:64px}.nums div{padding:22px 0!important;border-left:0!important}.tl{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--text);margin-left:4px}.tl li{padding:0 0 26px 24px}.tl li::before{top:7px;left:-5px}}
 /* services */
 .svc-sec{background:var(--paper-2)}
 .svc-list{border-top:1px solid var(--text)}
@@ -292,6 +308,23 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
         <div><span>VISION</span><b>신뢰받는 지역 최고의 종합 자동차 정비 센터</b></div>
         <div><span>MISSION</span><b>투명한 정비와 완벽한 기술력으로 고객 감동 실현</b></div>
       </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="nums rv">
+      <div><b>40여 년</b><span>대지정공 특장차 제조<br>탱크로리 · 특수 차량</span></div>
+      <div><b>3천여 평</b><span>대형 정비 설비<br>대형 리프트 · 크레인 · 도장 부스</span></div>
+      <div><b>승용 · 상용</b><span>전 차종 정비·검사<br>트럭 · 버스 전담 블루핸즈</span></div>
+    </div>
+    <div class="history rv">
+      <span class="label">History</span>
+      <ol class="tl">
+        <li><span class="y">40여 년</span><b>대지정공 특장차 제조</b><span class="d">탱크로리 · 특수 차량</span></li>
+        <li><span class="y">2017</span><b>대지남사서비스 설립</b><span class="d">블루핸즈 가맹 · 금탑산업훈장</span></li>
+        <li><span class="y">2018</span><b>자동차 종합검사 시작</b><span class="d">승용 · 상용 전 차종</span></li>
+        <li><span class="y">2023~25</span><b>119 구급차 장비 납품</b><span class="d">같은 대표의 DSV · 음압시스템 70대</span></li>
+        <li class="now"><span class="y">2026</span><b>K-Dissolve 출시</b><span class="d"><a href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">머니투데이 보도 →</a></span></li>
+      </ol>
     </div>
   </div>
 </section>

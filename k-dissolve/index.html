@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>K-Dissolve DPF 세척 · 대지남사서비스</title>
-<meta name="description" content="현대 블루핸즈 남사점 대지남사서비스가 직접 개발한 K-Dissolve DPF 탈거 세척. 보통 1~2시간, 디젤 전 차종, 1년 품질 보증. 경부고속도로 남사진위IC에서 1.5km.">
+<meta name="description" content="현대 블루핸즈 남사점 대지남사서비스가 직접 개발한 K-Dissolve DPF 탈거 세척. 보통 1~2시간, 마이티 55만 원부터(탈부착·부가세 포함), 1년 A/S. 경부고속도로 남사진위IC에서 1.5km.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="대지남사서비스(주) 블루핸즈">
 <meta property="og:title" content="K-Dissolve DPF 세척 · 대지남사서비스">
@@ -253,8 +253,28 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
 @media (max-width:860px){.mbar{display:flex}}
 
 
+.machine{margin:0 0 56px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#E9ECEF}
+.machine img{width:100%;aspect-ratio:2/1;object-fit:cover}
+.prices{grid-template-columns:repeat(3,1fr)!important}
+.price .amt strong{font-size:44px}
+.price-note{margin-top:20px;font-size:15px;color:var(--sub)}
+#trust{padding:72px 0}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.why>*{background:var(--ink-2);padding:32px 30px;transition:background .3s var(--ease)}
+.why a:hover{background:var(--ink-3)}
+.why .small{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--accent-l)}
+.why b{display:block;font-size:24px;font-weight:700;letter-spacing:-.035em;margin:10px 0 6px}
+.why p{font-size:15px;color:var(--sub)}
+@media (max-width:900px){.why{grid-template-columns:1fr}.why>*{padding:24px 22px}}
 /* phone: compact cards (sym) + stepper (steps) */
 @media (max-width:700px){
+  .prices{grid-template-columns:1fr!important;border-top:0;gap:8px}
+  .price{display:grid;grid-template-columns:1fr auto;align-items:center;padding:18px 18px!important;border:0!important;border-radius:16px;background:var(--card)}
+  .price span{grid-column:1;grid-row:2;font-size:12px;letter-spacing:0}
+  .price b{grid-column:1;grid-row:1;font-size:18px;margin:0 0 2px}
+  .price .amt{grid-column:2;grid-row:1/3;text-align:right}
+  .price .amt strong{font-size:28px}
+  .machine{margin-bottom:32px;border-radius:16px}
   .sym{grid-template-columns:1fr 1fr;gap:8px;border-top:0}
   .sym li{padding:18px 16px!important;border:0!important;border-radius:16px;background:var(--card)}
   .sym li:last-child{grid-column:1/-1}
@@ -280,7 +300,7 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
   <div class="wrap nav">
     <a class="brand" href="#top"><b>K-Dissolve</b><span>대지남사서비스 · 현대 블루핸즈 남사</span></a>
     <nav class="menu">
-      <a href="#process">세척 과정</a><a href="#price">가격</a><a href="#trust">회사 소개</a><a href="#faq">자주 묻는 질문</a><a href="#visit">오시는 길</a><a href="../">대지남사 홈</a>
+      <a href="#process">세척 과정</a><a href="#price">가격</a><a href="#visit">문의 · 오시는 길</a><a href="../">대지남사 홈</a>
     </nav>
     <a class="tel" href="tel:15771335"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>1577-1335</span></a>
   </div>
@@ -307,8 +327,8 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
     </div>
     <div class="facts">
       <div><b class="n">1~2<small>시간</small></b><span>세척 시간</span><em>기존 반나절~하루</em></div>
-      <div><b class="n">1<small>년</small></b><span>품질 보증</span><em>세척일로부터</em></div>
-      <div><b>전 차종</b><span>디젤 차량</span><em>화물차 · 버스 · 승용 · 수입차</em></div>
+      <div><b class="n">1<small>년</small></b><span>A/S 보증</span><em>세척일로부터</em></div>
+      <div><b class="n">55<small>만 원부터</small></b><span>마이티 기준</span><em>탈부착 · 부가세 포함</em></div>
     </div>
   </div>
 </section>
@@ -328,7 +348,8 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
 
 <section class="dark" id="process">
   <div class="wrap">
-    <div class="head rv"><div><span class="label">Process</span><h2>재생으로 안 타는 재까지,<br>떼어 내서 씻어 냅니다</h2></div></div>
+    <div class="head rv"><div><span class="label">Process</span><h2>직접 개발한 장비로<br>떼어 내서 씻어 냅니다</h2></div></div>
+    <figure class="machine rv"><img src="../img/k-dissolve-machine.webp" alt="K-Dissolve DPF 세척 장비" loading="lazy"></figure>
     <ol class="steps rv">
       <li><b>진단</b><span>세척 가능 여부 확인</span></li>
       <li><b>탈거</b><span>DPF 분리</span></li>
@@ -342,94 +363,35 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
       <div class="now"><span>K-Dissolve</span><b>1~2시간</b></div>
     </div>
     <p class="src-note rv">머니투데이 보도(2026.06.29)에 실린 회사 설명 기준</p>
-    <div class="honest rv">
-      <div><b>안 되면 솔직하게</b><span>필터가 깨졌으면 교체가 맞다고 말씀드립니다</span></div>
-      <div><b>디젤 전 차종</b><span>화물차 · 버스 · 승용 · 수입차</span></div>
-    </div>
   </div>
 </section>
 
 <section class="dark d2" id="price">
   <div class="wrap">
-    <div class="head rv"><div><span class="label">Price</span><h2>차종별 세척 가격</h2></div><p class="lead">추가 비용은 작업 전에 먼저 말씀드립니다.</p></div>
+    <div class="head rv"><div><span class="label">Price</span><h2>차종별 세척 가격</h2></div><p class="lead">탈부착 포함 · 부가세 포함 · 1년 A/S</p></div>
     <div class="prices rv">
-      <!-- 가격 정해지면: <div class="amt"><strong>00</strong>만 원부터</div> 로 바꾸기 -->
-      <div class="price"><span>1톤 화물</span><b>포터 · 봉고</b><div class="amt tbd">전화로 안내</div></div>
-      <div class="price"><span>중형 트럭</span><b>마이티 · 메가트럭</b><div class="amt tbd">전화로 안내</div></div>
-      <div class="price"><span>대형 트럭</span><b>엑시언트 · 덤프</b><div class="amt tbd">전화로 안내</div></div>
-      <div class="price"><span>승용 · SUV</span><b>국산 · 수입 디젤</b><div class="amt tbd">전화로 안내</div></div>
+      <div class="price"><span>유로 4 · 5 · 6</span><b>마이티 · 카운티</b><div class="amt"><strong>55</strong>만 원</div></div>
+      <div class="price"><span>메가트럭 유로 4·5·6 · 파비스 유로 6</span><b>메가트럭 · 파비스</b><div class="amt"><strong>71.5</strong>만 원</div></div>
+      <div class="price"><span>트라고 유로 4·5 · 엑시언트 유로 5·6</span><b>트라고 · 엑시언트</b><div class="amt"><strong>77</strong>만 원</div></div>
     </div>
+    <p class="price-note rv">그 외 차종은 전화로 문의해 주세요. 필터가 깨져 세척으로 안 되면 교체가 맞다고 솔직하게 말씀드립니다.</p>
     <div class="estimate rv">
       <p>교체 견적 받으셨나요?<span>견적서를 보내 주시면 세척으로 되는지 먼저 봐 드립니다.</span></p>
       <a class="btn btn-kakao" data-link="kakao" href="#">카톡으로 견적서 보내기</a>
-      <a class="btn btn-light" data-link="naverBooking" href="#"><b class="nv">N</b>네이버로 예약하기</a>
+      <a class="btn btn-light" href="tel:01053140079">DPF 상담 010-5314-0079</a>
+      <a class="btn btn-ghost" data-link="naverBooking" href="#"><b class="nv">N</b>네이버 예약</a>
     </div>
   </div>
 </section>
 
 <section class="dark" id="trust">
   <div class="wrap">
-    <div class="head rv"><div><span class="label">About</span><h2>처음 맡기셔도<br>믿을 수 있게</h2></div><p class="lead">현대 블루핸즈 남사점, 대지남사서비스가 직접 개발한 장비입니다.</p></div>
-    <div class="trust rv">
-      <div>
-        <span class="small">가장 큰 차이</span>
-        <h3>현대 공식 블루핸즈</h3>
-                <ul>
-          <li><b>현대 보증수리</b><span>보증 기간 차량도 같은 곳에서</span></li>
-          <li><b>현대모비스 순정 부품</b><span>교체가 필요할 때도 순정 부품</span></li>
-          <li><b>중대형 상용차 전담</b><span>트럭·버스 전담 블루핸즈</span></li>
-          <li><b>현대 긴급출동 연계</b><span class="n">080-600-6000</span></li>
-        </ul>
-      </div>
-      <a class="press" href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener">
-        <span class="small">언론 보도</span>
-        <h3>대지남사서비스, 디젤 차량 DPF 청소 장비 'K-Dissolve' 출시</h3>
-        <span class="src"><b>머니투데이</b><span class="n">2026. 06. 29</span></span>
-        <blockquote>떼어 낸 필터에 특수 해리액을 넣어 오염물질을 분해하는 방식으로, 기존에 반나절에서 하루 걸리던 공정을 1~2시간으로 줄였다.</blockquote>
-        <span class="more">기사 원문 보기 <span class="arrow">→</span></span>
-      </a>
+    <div class="why rv">
+      <div><span class="small">현대 공식</span><b>블루핸즈 남사</b><p>트럭·버스 전담 블루핸즈가 직접 세척합니다.</p></div>
+      <a href="https://www.mt.co.kr/industry/2026/06/29/2026062914411971481" target="_blank" rel="noopener"><span class="small">언론 보도</span><b>머니투데이 <span class="arrow">→</span></b><p>K-Dissolve 출시 기사 (2026.06.29)</p></a>
+      <a href="../#about"><span class="small">회사 소개</span><b>대지남사서비스 <span class="arrow">→</span></b><p>40여 년 특장차 제조, 2017년부터 블루핸즈</p></a>
     </div>
-    <div class="nums rv">
-      <div><b>40여 년</b><strong>특장차 제조</strong><span>대지정공 · 탱크로리·특수 차량</span></div>
-      <div><b>3천여 평</b><strong>대형 정비 설비</strong><span>대형 리프트 · 크레인 · 도장 부스</span></div>
-    </div>
-    <div class="history rv">
-      <h3>HISTORY</h3>
-      <ol class="tl">
-        <li><span class="y">40여 년</span><b>대지정공 특장차 제조</b><span class="d">탱크로리·특수 차량</span></li>
-        <li><span class="y n">2017</span><b>대지남사서비스 설립</b><span class="d">블루핸즈 가맹 · 금탑산업훈장</span></li>
-        <li><span class="y n">2018</span><b>자동차 종합검사 시작</b><span class="d">승용·상용 전 차종</span></li>
-        <li><span class="y n">2023~25</span><b>119 구급차 장비 납품</b><span class="d">같은 대표의 DSV · 음압시스템 70대</span></li>
-        <li class="now"><span class="y n">2026</span><b>K-Dissolve 출시</b><span class="d">머니투데이 보도</span></li>
-      </ol>
-    </div>
-    <p class="fine">K-Dissolve는 대지남사서비스의 자체 장비이며, 현대자동차가 인증한 제품은 아닙니다. 세척 시간 비교는 언론에 실린 회사 설명입니다.</p>
-  </div>
-</section>
-
-<section class="dark d2">
-  <div class="wrap">
-    <div class="fleet rv">
-      <div>
-        <span class="label">For Fleets</span>
-        <h3>차가 여러 대라면,<br>세척 일정을 맞춰 드립니다</h3>
-        <p>운수회사 · 지입사 · 특장차 운영사. 정비·검사 날에 세척까지 한 번에.</p>
-        <div class="tags"><span>차량별 세척 시기 관리</span><span>정비·검사와 한 번에</span><span>현장 방문 세척 상담</span></div>
-      </div>
-      <a class="btn btn-light" href="tel:15771335">단체 상담 전화 <span class="arrow">→</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="dark" id="faq">
-  <div class="wrap faq-in">
-    <div class="rv"><span class="label">FAQ</span><h2>기사님들이<br>많이 물어보시는 것</h2></div>
-    <div class="qa rv">
-      <div><h3>얼마나 자주 하나요?</h3><p>8만~10만 km마다. 시내 위주면 조금 더 일찍.</p></div>
-      <div><h3>고속도로 많이 타면 괜찮죠?</h3><p>그을음은 타도, 재(애쉬)는 계속 쌓입니다.</p></div>
-      <div><h3>첨가제면 되지 않나요?</h3><p>그을음만 잘 타게 할 뿐, 쌓인 재는 못 뺍니다.</p></div>
-      <div><h3>수입차도 되나요?</h3><p>네. 디젤이면 전 차종 됩니다.</p></div>
-    </div>
+    <p class="fine rv">K-Dissolve는 대지남사서비스의 자체 장비이며, 현대자동차가 인증한 제품은 아닙니다.</p>
   </div>
 </section>
 
@@ -447,6 +409,7 @@ footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,
     </div>
     <div class="rv">
       <div class="info">
+        <div><span>DPF 상담</span><a href="tel:01053140079" style="font-weight:600">010-5314-0079</a></div>
         <div><span>주소</span><b style="font-weight:600">경기도 용인시 처인구 남사읍 천덕산로 23</b></div>
         <div><span>찾아오기</span><div>남사진위IC에서 1.5km, 오산IC에서 6km<br><small style="color:rgba(255,255,255,.5)">경기도소방학교 옆 · 대형차도 바로 들어오실 수 있습니다</small></div></div>
         <div><span>경부선</span><div class="road" aria-label="경부고속도로 오산IC와 안성IC 사이, 남사진위IC에서 1.5km"><span>오산IC</span><span class="lane"></span><span>안성IC</span></div></div>
