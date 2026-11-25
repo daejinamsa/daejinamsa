@@ -134,3 +134,17 @@ footer .copy{margin-top:var(--s6);padding-top:var(--s5);border-top:1px solid rgb
 .rv{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* 디테일 */
+::selection{background:rgba(157,189,230,.35)}
+h1,h2,h3,.quote{text-wrap:balance}
+p{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--accent-l);outline-offset:3px;border-radius:4px}
+.btn{transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .15s var(--ease)}
+.btn:active,.mbar a:active{transform:scale(.97)}
+.nav{transition:height .3s var(--ease)}
+header.solid .nav{height:64px}
+header.solid .logo img{height:38px}
+.logo img{transition:height .3s var(--ease)}
+.menu a.on{color:#fff}.menu a.on::after{transform:scaleX(1)}
+@media (max-width:520px){header.solid .logo img{height:32px}}

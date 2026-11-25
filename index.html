@@ -35,6 +35,11 @@
 @keyframes heroUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes heroBg{from{opacity:0;transform:scale(1.06)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero .bg,.hero .wrap{animation:none}}
+.cue{position:absolute;z-index:2;left:50%;bottom:var(--s5);width:1px;height:48px;transform:translateX(-50%);background:rgba(255,255,255,.18);overflow:hidden}
+.cue span{position:absolute;left:0;top:-50%;width:1px;height:50%;background:#fff;animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+@media (prefers-reduced-motion:reduce){.cue span{animation:none;top:25%}}
+@media (max-width:760px){.cue{display:none}}
 @media (max-width:760px){.hero{padding:128px 0 var(--s8)}.hours-line{font-size:var(--t-small)}}
 
 /* 정비·검사·DPF 세 칸 */
@@ -146,6 +151,34 @@
 .faq details p{padding:0 var(--s7) var(--s5) 0;color:var(--sub);line-height:1.8}
 .faq details p a{color:var(--accent);font-weight:600;border-bottom:1px solid currentColor}
 @media (max-width:900px){.faq-in{grid-template-columns:1fr;gap:var(--s6)}.faq details p{padding-right:0}}
+
+/* 휴대폰: 짧고 촘촘하게 */
+@media (max-width:700px){
+  .pillar{padding:var(--s5)}
+  .pillar h3{font-size:19px;margin:var(--s3) 0 var(--s2)}
+  .pillar p{font-size:var(--t-small)}
+  .pillar .go{padding-top:var(--s4);font-size:var(--t-small)}
+  .vm{grid-template-columns:1fr;margin-top:var(--s6)}
+  .vm div{padding:var(--s4) 0!important;border-left:0!important}
+  .vm div+div{border-top:1px solid var(--line)}
+  .nums{grid-template-columns:repeat(3,1fr)}
+  .nums div{padding:var(--s4) var(--s2) var(--s4) 0!important;border-bottom:0}
+  .nums div+div{padding-left:var(--s3)!important;border-left:1px solid var(--line)!important}
+  .nums b{font-size:22px}
+  .nums span{font-size:12px;margin-top:var(--s2)}
+  .steps{gap:var(--s2);border-top:0}
+  .steps li{padding:var(--s4)!important;border:0!important;border-radius:var(--r);background:var(--paper-2)}
+  .steps li::before{margin-bottom:var(--s3)}
+  .steps b{font-size:17px}
+  .steps span{font-size:13px}
+  .tl li{padding-bottom:var(--s4)}
+  .tl .y{font-size:18px}
+  .tl b{font-size:15px;margin:var(--s1) 0 2px}
+  .tl .d{font-size:13px}
+  .history{margin-top:var(--s7)}
+  .hours{padding:var(--s5)}
+  .hrow b{font-size:19px}
+}
 </style>
 </head>
 <body>
@@ -173,6 +206,7 @@
     </div>
     <p class="hours-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>평일 08:30–18:00 <i></i> 토요일 08:30–13:00 <i></i> 일요일·공휴일 휴무</p>
   </div>
+  <a class="cue" href="#about" aria-label="아래로"><span></span></a>
 </section>
 
 <section class="pillars dark">
@@ -334,21 +368,11 @@ document.querySelectorAll("[data-link]").forEach(function (a) {
   if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
   else a.style.display = "none";
 });
-/* 헤더: 스크롤하면 배경 */
-var hd = document.getElementById("hd");
-function onScroll(){ hd.classList.toggle("solid", window.scrollY > 40); }
-onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
-/* 스크롤 등장 효과 */
-if ("IntersectionObserver" in window) {
-  var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, {rootMargin: "0px 0px -8% 0px"});
-  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
-} else document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("in"); });
 /* 검사 링크로 오면 펼치기 */
 document.querySelectorAll('a[href="#inspect"]').forEach(function (a) {
   a.addEventListener("click", function () { var d = document.getElementById("inspect"); if (d) d.open = true; });
 });
 </script>
+<script src="site.js" defer></script>
 </body>
 </html>

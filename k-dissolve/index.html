@@ -287,16 +287,6 @@ document.querySelectorAll("[data-link]").forEach(function (a) {
   var url = LINKS[a.dataset.link];
   if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; } else a.style.display = "none";
 });
-document.querySelectorAll("[data-ifnot]").forEach(function (a) { if (LINKS[a.dataset.ifnot]) a.style.display = "none"; });
-var hd = document.getElementById("hd");
-function onScroll(){ hd.classList.toggle("solid", window.scrollY > 40); }
-onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
-if ("IntersectionObserver" in window) {
-  var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
-  }, {rootMargin: "0px 0px -8% 0px"});
-  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
-} else document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("in"); });
 </script>
 <script>
 (function () {
@@ -377,5 +367,6 @@ if ("IntersectionObserver" in window) {
   requestAnimationFrame(draw);
 })();
 </script>
+<script src="../site.js" defer></script>
 </body>
 </html>
