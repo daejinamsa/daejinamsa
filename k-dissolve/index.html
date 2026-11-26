@@ -46,7 +46,7 @@ body{background:var(--ink)}
   .art .ring{box-shadow:none}.art-note{display:none}
   .facts{margin-top:var(--s8)}
 }
-@media (max-width:600px){.facts{grid-template-columns:1fr 1fr}.facts div{padding:var(--s5) 0 var(--s5) var(--s5)}.facts div:nth-child(3){grid-column:1/-1;border-top:1px solid var(--line-d);padding-left:0;border-right:0}.facts div:nth-child(2){border-right:0}}
+@media (max-width:600px){.facts div{padding:var(--s5) var(--s2) var(--s5) var(--s3)}.facts div:first-child{padding-left:0}.facts b{font-size:26px}.facts span{font-size:13px;margin-top:var(--s2)}.facts em{font-size:11px}}
 
 /* 증상 */
 .sym{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--text);counter-reset:s}
@@ -71,7 +71,6 @@ body{background:var(--ink)}
 .vs .was b{color:rgba(255,255,255,.35);text-decoration:line-through;text-decoration-thickness:2px}
 .vs .now{text-align:right}.vs .now span,.vs .now b{color:var(--accent)}
 .vs .to{font-size:40px;color:var(--muted)}
-.src-note{margin-top:var(--s3);font-size:13px;color:var(--muted)}
 
 /* 가격 */
 .prices{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--text)}
@@ -95,10 +94,6 @@ body{background:var(--ink)}
 .fine{margin-top:var(--s5);font-size:var(--t-meta);color:var(--muted)}
 
 /* 오시는 길 */
-.road{display:flex;align-items:center;gap:var(--s3);padding-top:var(--s5);font-size:13px;color:var(--muted)}
-.road .lane{position:relative;flex:1;height:2px;background:rgba(255,255,255,.25)}
-.road .lane::after{content:"대지남사 · 남사진위IC 1.5km";position:absolute;left:46%;top:-28px;transform:translateX(-50%);white-space:nowrap;font-size:var(--t-meta);font-weight:600;color:var(--accent-l)}
-.road .lane::before{content:"";position:absolute;left:46%;top:-5px;width:12px;height:12px;border-radius:50%;background:var(--accent-l);transform:translateX(-50%)}
 
 @media (max-width:1000px){.sym{grid-template-columns:1fr 1fr}.sym li{padding:var(--s5) var(--s4) var(--s5) 0!important;border-left:0!important}.sym li:nth-child(even){padding-left:var(--s4)!important;border-left:1px solid var(--line)!important}.sym li::before{margin-bottom:var(--s4)}}
 @media (max-width:900px){.why{grid-template-columns:1fr}.vs{padding:var(--s6)}}
@@ -198,7 +193,6 @@ body{background:var(--ink)}
       <div class="to" aria-hidden="true">→</div>
       <div class="now"><span>K-Dissolve</span><b>1~2시간</b></div>
     </div>
-    <p class="src-note rv">머니투데이 보도(2026.06.29)에 실린 회사 설명 기준</p>
   </div>
 </section>
 
@@ -241,7 +235,6 @@ body{background:var(--ink)}
       <div class="info">
                 <div><span>주소</span><b style="font-weight:600">경기도 용인시 처인구 남사읍 천덕산로 23</b></div>
         <div><span>찾아오기</span><div>남사진위IC에서 1.5km, 오산IC에서 6km<br><small style="color:var(--muted)">경기도소방학교 옆 · 대형차도 바로 들어오실 수 있습니다</small></div></div>
-        <div><span>경부선</span><div class="road" aria-label="경부고속도로 오산IC와 안성IC 사이, 남사진위IC에서 1.5km"><span>오산IC</span><span class="lane"></span><span>안성IC</span></div></div>
         <div><span>예약 시간</span><div>평일 08:30–15:30 · 토요일 08:30–11:30<br><small style="color:var(--muted)">1시간 단위 예약제 · 일요일·공휴일 휴무</small></div></div>
       </div>
       <div class="maps">
